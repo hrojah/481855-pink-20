@@ -1,0 +1,34 @@
+@import "variables";
+
+.rates {
+  background-color: $advantages-background;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 300;
+    color: $white;
+  }
+
+  &__details {
+    background-color: $white;
+  }
+}
+
+.detail__item {
+  border: 2px solid $border-color;
+  border-radius: 0 0 0 1px;
+}
+
+.slider-wrapper {
+  border: 2px solid $text-color;
+  border-radius: 1px 0 0 0;
+  background-color: $text-color;
+}

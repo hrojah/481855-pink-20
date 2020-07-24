@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -14,17 +15,17 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -33,9 +34,9 @@
       <section class="main">
         <h1 class="main__title">Взгляните на жизнь иначе!</h1>
         <a class="main__link button" href="https://www.apple.com/ru/ios/app-store">Скачать приложение</a>
-        <a class="" href="https://www.apple.com/ru/ios/app-store">App Store</a>
-        <a class="" href="https://play.google.com/store/apps">Play маркет</a>
-        <a class="" href="https://www.microsoft.com/ru-ru/store/apps">Microsoft Store</a>
+        <a class="main__link--store" href="https://www.apple.com/ru/ios/app-store">App Store</a>
+        <a class="main__link--store" href="https://play.google.com/store/apps">Play маркет</a>
+        <a class="main__link--store" href="https://www.microsoft.com/ru-ru/store/apps">Microsoft Store</a>
         <p class="main__note">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="offer">
@@ -62,7 +63,7 @@
         </div>
       </section>
       <section class="reviews">
-        <h2 class="visually hidden">Отзывы о нашем приложении</h2>
+        <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
         <div class="reviews__wrapper slider">
           <article class="reviews__item slider__item">
             <h3 class="reviews__user">Николай Петров</h3>
@@ -87,8 +88,10 @@
         <h2 class="visually hidden">Тарифы</h2>
         <div class="rates__wrapper slider">
           <article class="rates__item slider__item">
-            <h3 class="rates__title slider__title">База</h3>
-            <p class="rates__text">1,99 USD</p>
+            <div class="slider-wrapper">
+              <h3 class="rates__title slider__title">База</h3>
+              <p class="rates__text">1,99 USD</p>
+            </div>
             <ul class="rates__details">
               <li class="detail__item">Розовый фильтр</li>
               <li class="detail__item detail__item--excluded">Смайлики</li>
@@ -96,8 +99,10 @@
             </ul>
           </article>
           <article class="rates__item slider__item">
-            <h3 class="rates__title slider__title">Стандарт</h3>
-            <p class="rates__cost">3,99 USD</p>
+            <div class="slider-wrapper">
+              <h3 class="rates__title slider__title">Стандарт</h3>
+              <p class="rates__cost">3,99 USD</p>
+            </div>
             <ul class="rates__details">
               <li class="detail__item">Розовый фильтр</li>
               <li class="detail__item">Смайлики</li>
@@ -105,8 +110,10 @@
             </ul>
           </article>
           <article class="rates__item slider__item">
-            <h3 class="rates__title slider__title">Анлим</h3>
-            <p class="rates__text">9,99 USD</p>
+            <div class="slider-wrapper">
+              <h3 class="rates__title slider__title">Анлим</h3>
+              <p class="rates__text">9,99 USD</p>
+            </div>
             <ul class="rates__details">
               <li class="detail__item">Розовый фильтр</li>
               <li class="detail__item">Смайлики</li>
@@ -121,17 +128,17 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title"></h2>
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__item">
-          <p>Звоните:</p>
+          <p class="contacts__text">Звоните:</p>
           <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
         <div class="contacts__item">
-          <p>Пишите:</p>
+          <p class="contacts__text">Пишите:</p>
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts__item">
-          <p>Приезжайте в гости!</p>
+          <p class="contacts__text">Приезжайте в гости!</p>
           <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
         </div>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595176593861!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Большая конюшенная, 19/8"></iframe>
@@ -156,7 +163,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html-academy"></a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">html-academy</a>
         </div>
       </div>
     </footer>

@@ -1,0 +1,20 @@
+@import "variables";
+
+.offer__information {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.advantages {
+  background-color: $advantages-background;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+  }
+}

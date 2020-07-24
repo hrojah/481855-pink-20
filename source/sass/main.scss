@@ -1,0 +1,27 @@
+@import "variables";
+
+.main {
+  background-color: $main-background;
+  background-image: url("../img/bg-back-mobile@1x.jpg"),
+    url("../img/iphone-hand-tablet@1x.png");
+  background-repeat: no-repeat;
+  background-position: center, center bottom;
+  font-weight: 300;
+  color: $white;
+
+  &__title {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: inherit;
+  }
+
+  &__link--store {
+    color: inherit;
+  }
+}

@@ -1,0 +1,11 @@
+@import "variables";
+
+.reviews {
+  line-height: 30px;
+
+  &__user {
+    font-size: 18px;
+    font-weight: 700;
+    color: $black;
+  }
+}
