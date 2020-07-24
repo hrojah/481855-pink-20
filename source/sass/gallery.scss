@@ -1,0 +1,24 @@
+@import "variables";
+
+.gallery {
+  &__title {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.post__item {
+  background-color: $advantages-background;
+}
+
+.post__user--size {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.post__like--size {
+  font-size: 12px;
+  color: $contacts-link-color;
+  text-transform: uppercase;
+}

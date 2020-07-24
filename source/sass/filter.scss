@@ -1,0 +1,13 @@
+@import "variables";
+
+.filter {
+  &__title {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.form {
+  background-color: $advantages-background;
+}
