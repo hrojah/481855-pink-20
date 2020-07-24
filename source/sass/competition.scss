@@ -1,0 +1,50 @@
+@import "variables";
+
+.competition {
+  line-height: 30px;
+
+  &__text--color {
+    color: $contacts-link-color;
+  }
+}
+
+.form {
+  &__label {
+    color: $contacts-link-color;
+  }
+
+  &__text {
+    font-size: 18px;
+    border: 2px solid $border-color;
+    border-radius: 1px;
+  }
+
+  &__button {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $white;
+    background-color: $submit-button-color;
+    border: 2px solid $submit-button-color;
+    border-radius: 1px;
+  }
+}
+
+.details {
+  background-color: $advantages-background;
+
+  &__label--color {
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
+  }
+}
+
+.app {
+  background-color: $advantages-background;
+}
+
+.legend {
+  line-height: 18px;
+  color: $contacts-link-color;
+}
