@@ -2,12 +2,16 @@
 
 .main {
   background-color: $main-background;
-  background-image: url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center, center bottom;
+  background-position: center;
   font-weight: 300;
   color: $white;
+
+  &--bg {
+    background-image: url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+  }
 
   &__title {
     font-size: 24px;
