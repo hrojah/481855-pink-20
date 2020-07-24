@@ -3,6 +3,10 @@
 .competition {
   line-height: 30px;
 
+  &__title {
+    font-size: inherit;
+  }
+
   &__text--color {
     color: $contacts-link-color;
   }
@@ -10,7 +14,14 @@
 
 .form {
   &__label {
+    text-transform: uppercase;
     color: $contacts-link-color;
+  }
+
+  &__label--color {
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-color;
   }
 
   &__text {
@@ -32,12 +43,6 @@
 
 .details {
   background-color: $advantages-background;
-
-  &__label--color {
-    font-size: 18px;
-    line-height: 30px;
-    color: $text-color;
-  }
 }
 
 .app {
@@ -45,6 +50,7 @@
 }
 
 .legend {
+  text-transform: uppercase;
   line-height: 18px;
   color: $contacts-link-color;
 }
