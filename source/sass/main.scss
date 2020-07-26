@@ -12,24 +12,25 @@
     background-image: url("../img/iphone-hand-mobile@1x.png"),
       url("../img/bg-back-mobile@1x.jpg");
   }
+}
 
-  &__title {
-    font-size: 24px;
-    line-height: 120%;
+.main__title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
 
-    &--second {
-      line-height: 33px;
-    }
+  &--second {
+    line-height: 33px;
   }
+}
 
-  &__link {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: inherit;
-  }
+.main__link {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: inherit;
 
-  &__link--store {
+  &--store {
     color: inherit;
   }
 }

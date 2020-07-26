@@ -1,11 +1,9 @@
 @import "variables";
 
-.gallery {
-  &__title {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-  }
+.gallery__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
 }
 
 .post__item {

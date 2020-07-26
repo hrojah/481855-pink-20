@@ -4,22 +4,22 @@
   background-color: $advantages-background;
   text-transform: uppercase;
   line-height: 30px;
+}
 
-  &__title {
-    font-size: 16px;
-    font-weight: 700;
-    color: $white;
-  }
+.rates__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+}
 
-  &__text {
-    font-size: 18px;
-    font-weight: 300;
-    color: $white;
-  }
+.rates__text {
+  font-size: 18px;
+  font-weight: 300;
+  color: $white;
+}
 
-  &__details {
-    background-color: $white;
-  }
+.rates__details {
+  background-color: $white;
 }
 
 .detail__item {

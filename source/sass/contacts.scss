@@ -4,20 +4,20 @@
   font-size: 24px;
   line-height: 25px;
   font-weight: 300;
+}
 
-  &__title {
-    font-size: 24px;
-    line-height: 120%;
-    font-weight: 300;
-  }
+.contacts__title {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+}
 
-  &__text {
-    font-size: 18px;
-    font-weight: 700;
-  }
+.contacts__text {
+  font-size: 18px;
+  font-weight: 700;
+}
 
-  &__link {
-    line-height: 33px;
-    color: $contacts-link-color;
-  }
+.link__link {
+  line-height: 33px;
+  color: $contacts-link-color;
 }
