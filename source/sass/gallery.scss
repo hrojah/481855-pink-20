@@ -1,6 +1,7 @@
 @import "variables";
 
 .gallery__title {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -10,9 +11,17 @@
   background-color: $advantages-background;
 }
 
+.post__user {
+  margin: 0;
+}
+
 .post__user--size {
   font-size: 12px;
   font-weight: 300;
+}
+
+.post__text {
+  margin: 0;
 }
 
 .post__like--size {

@@ -12,6 +12,12 @@
   text-transform: uppercase;
 }
 
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .site-list__item {
   box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }

@@ -11,6 +11,10 @@
   }
 }
 
+.form__name {
+  padding: 0;
+}
+
 .form__text {
   font-size: 18px;
   border: 2px solid $border-color;
@@ -28,10 +32,16 @@
 }
 
 .details {
+  padding: 0;
   background-color: $advantages-background;
 }
 
+.number {
+  padding: 0;
+}
+
 .app {
+  padding: 0;
   background-color: $advantages-background;
 }
 
