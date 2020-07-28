@@ -1,0 +1,14 @@
+.button {
+  border: 3px solid $white;
+  border-radius: 29px;
+
+  &--upload {
+    border-color: $contacts-link-color;
+    border-radius: 30px;
+  }
+
+  &--cancel {
+    border-color: rgba($text-color, 0.1);
+    border-radius: 30px;
+  }
+}
