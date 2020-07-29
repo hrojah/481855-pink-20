@@ -1,15 +1,8 @@
-.competition {
-  line-height: 30px;
-}
-
 .competition__title {
-  margin: 0;
   font-size: inherit;
 }
 
 .competition__text {
-  margin: 0;
-
   &--color {
     color: $contacts-link-color;
   }
