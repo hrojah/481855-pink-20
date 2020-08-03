@@ -1,15 +1,11 @@
-.details {
-  @media #{$mobile} {
-    background-color: $advantages-background;
-  }
-
+.review {
   @media #{$tablet} {
     padding: 0 60px;
   }
 
   @media #{$desktop} {
+    grid-row: 4/5;
     grid-column: 1/-1;
-    grid-row: 3/4;
     padding: 0 60px;
   }
 }

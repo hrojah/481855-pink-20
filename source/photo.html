@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -59,8 +60,8 @@
         </div>
         <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
         <div class="gallery__wrapper">
-          <article class="gallery__post">
-            <div class="gallery__item">
+          <article class="gallery__post gallery__post--top">
+            <div class="gallery__item gallery__item--top">
               <p class="gallery__user"><b>Анна</b> <span class="gallery__user--size">(5 минут назад)</span></p>
               <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!</p>
               <a class="gallery__like">Лайк</a> <span class="gallery__like--size">Нравится: 215</span>
@@ -117,36 +118,38 @@
         </div>
       </section>
       <section class="filter">
-        <h2 class="filter__title">Затми их всех! Выкладывай все, что накопилось в телефоне!</h2>
+        <h2 class="filter__title">Затми их всех!<br/> Выкладывай все, что накопилось в телефоне!</h2>
         <form class="filter__form form form--color" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
-            <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото в фильтре">
-            <div class="form__list filter-list">
-              <button class="filter__item filter__item--crop" type="button"></button>
-              <div class="form__range form__range--active">
-                <div class="form__scale"></div>
-                <div class="form__toggle"></div>
+          <img class="filter__foto" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото в фильтре">
+          <fieldset class="filter__fieldset">
+            <div class="filter__wrapper">
+              <div class="form__list filter-list">
+                <button class="filter__item filter__item--crop" type="button"></button>
+                <div class="form__range form__range--active">
+                  <div class="form__scale"></div>
+                  <div class="form__toggle"></div>
+                </div>
               </div>
-              <button class="filter__item filter__item--fill" type="button"></button>
-              <button class="filter__item filter__item--contrast" type="button"></button>
-            </div>
-            <div class="form__list filter-list">
-              <button class="filter__item filter__item--fill" type="button"></button>
-              <div class="form__range form__range--active">
-                <div class="form__scale"></div>
-                <div class="form__toggle"></div>
+              <div class="form__list filter-list">
+                <button class="filter__item filter__item--fill" type="button"></button>
+                <div class="form__range form__range--active">
+                  <div class="form__scale"></div>
+                  <div class="form__toggle"></div>
+                </div>
               </div>
-            </div>
-            <div class="form__list filter-list">
-              <button class="filter__item filter__item--contrast" type="button"></button>
-              <div class="form__range form__range--active">
-                <div class="form__scale"></div>
-                <div class="form__toggle"></div>
+              <div class="form__list filter-list">
+                <button class="filter__item filter__item--contrast" type="button"></button>
+                <div class="form__range form__range--active">
+                  <div class="form__scale"></div>
+                  <div class="form__toggle"></div>
+                </div>
               </div>
             </div>
           </fieldset>
-          <button class="form__submit button--upload" type="submit">Запостить</button>
-          <button class="form__reset button--cancel" type="reset" disabled>Отмена</button>
+          <div class="filter__buttons">
+            <button class="form__submit button--upload" type="submit">Запостить</button>
+            <button class="form__reset button--cancel" type="reset" disabled>Отмена</button>
+          </div>
         </form>
       </section>
   </main>

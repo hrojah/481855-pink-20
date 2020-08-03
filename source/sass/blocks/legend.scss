@@ -1,4 +1,17 @@
 .legend {
   text-transform: uppercase;
   color: $contacts-link-color;
+  text-align: center;
+
+  @media #{$mobile} {
+    max-width: 218px;
+  }
+
+  @media #{$tablet} {
+    max-width: 390px;
+  }
+
+  @media #{$desktop} {
+    max-width: 390px;
+  }
 }

@@ -1,6 +1,18 @@
 .rates {
   background-color: $advantages-background;
   text-transform: uppercase;
+
+  @media #{$tablet} {
+    padding: 0 22px;
+  }
+
+  @media #{$desktop} {
+    padding: 0 130px;
+  }
+}
+
+.rates__item {
+  min-width: 276px;
 }
 
 .rates__title {
@@ -16,8 +28,21 @@
 }
 
 .rates__details {
+  padding: 0;
   list-style: none;
   background-color: $white;
+}
+
+.rates__toggles {
+  text-align: center;
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
 }
 
 .detail__item {

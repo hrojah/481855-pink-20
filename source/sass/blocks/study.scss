@@ -1,0 +1,62 @@
+.study {
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    min-height: 330px;
+    padding: 0 20px;
+    background: url("../img/timer-tablet.png") no-repeat center left 20px;
+  }
+
+  @media #{$desktop} {
+    display: grid;
+    align-items: center;
+    min-height: 430px;
+    padding: 0 130px;
+    background: url("../img/timer-desktop.png") no-repeat center left 131px;
+  }
+}
+
+.study__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media #{$tablet} {
+    width: 47%;
+  }
+
+  @media #{$desktop} {
+    width: 45%;
+  }
+}
+
+.study__title {
+  font-size: 30px;
+  font-weight: 700;
+
+  @media #{$tablet} {
+    max-width: 170px;
+  }
+}
+
+.study__text {
+  @media #{$tablet} {
+    max-width: 310px;
+  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+    max-width: 535px;
+  }
+}
+
+.study__link {
+  color: $contacts-link-color;
+  text-decoration: underline;
+
+  @media #{$desktop} {
+    font-size: 18px;
+  }
+}

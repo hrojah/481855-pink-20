@@ -8,15 +8,5 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
-  padding: 0 20px;
-}
-
-@media (min-width: $tablet-width) {
-  width: 620px;
-  padding: 0 20px;
-}
-
-@media (min-width: $desktop-width) {
-  width: 940px;
-  padding: 0 130px;
+  position: relative;
 }

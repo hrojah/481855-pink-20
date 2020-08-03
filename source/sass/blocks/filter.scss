@@ -1,4 +1,64 @@
+.filter {
+  @media #{$desktop} {
+    padding: 0 130px;
+  }
+}
+
 .filter__title {
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+
+  @media #{$mobile} {
+    max-width: 240px;
+  }
+
+  @media #{$tablet} {
+    font-size: 18px;
+  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+  }
+}
+
+.filter__wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  @media #{$tablet} {
+    display: grid;
+  }
+
+  @media #{$desktop} {
+    display: grid;
+  }
+}
+
+.filter__foto {
+  @media #{$tablet} {
+    grid-row: 1/-1;
+  }
+
+  @media #{$desktop} {
+    grid-row: 1/-1;
+  }
+}
+
+.filter__fieldset {
+  @media #{$tablet} {
+    max-width: 260px;
+  }
+}
+
+.filter__buttons {
+  @media #{$mobile} {
+    display: grid;
+  }
+
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -1,3 +1,38 @@
 .social__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.social__item {
+  margin: 0 14px;
+}
+
+.page-footer__wrapper {
+  display: flex;
+
+  @media #{$mobile} {
+    min-height: 284px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media #{$tablet} {
+    min-height: 127px;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media #{$desktop} {
+    min-height: 197px;
+    padding: 0 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
 }
