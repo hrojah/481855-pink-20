@@ -17,7 +17,7 @@
     }
 
     @media #{$desktop} {
-      max-width: 183px;
+      min-width: 183px;
       grid-column: 2/3;
     }
   }
@@ -33,12 +33,10 @@
 
     @media #{$tablet} {
       max-width: 260px;
-      grid-column: 2/3;
     }
 
     @media #{$desktop} {
-      max-width: 183px;
-      grid-column: 3/4;
+      min-width: 183px;
     }
   }
 }
