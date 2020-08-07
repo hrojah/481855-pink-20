@@ -1,0 +1,41 @@
+.competition__title {
+  font-size: inherit;
+  margin: 0 auto;
+  text-align: center;
+
+  @media #{$mobile} {
+    max-width: 300px;
+  }
+
+  @media #{$tablet} {
+    max-width: 540px;
+    font-size: 18px;
+  }
+
+  @media #{$desktop} {
+    max-width: 830px;
+    font-size: 18px;
+  }
+}
+
+.competition__form {
+  margin: 0 auto;
+
+  @media #{$mobile} {
+    width: 86%;
+  }
+
+  @media #{$tablet} {
+    width: 93%;
+  }
+
+  @media #{$desktop} {
+    width: 78%;
+  }
+}
+
+.competition__text {
+  &--color {
+    color: $contacts-link-color;
+  }
+}

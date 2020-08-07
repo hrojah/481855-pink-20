@@ -1,0 +1,36 @@
+.offer__information {
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  min-height: 250px;
+}
+
+.offer__item {
+  font-weight: 300;
+  margin: 0 auto;
+
+  @media #{$mobile} {
+    font-size: 24px;
+    max-width: 240px;
+  }
+
+  @media #{$tablet} {
+    font-size: 40px;
+    max-width: 600px;
+  }
+
+  @media #{$desktop} {
+    font-size: 50px;
+    max-width: 750px;
+  }
+
+  &--width {
+    @media #{$tablet} {
+      max-width: 410px;
+    }
+
+    @media #{$desktop} {
+      max-width: 420px;
+    }
+  }
+}

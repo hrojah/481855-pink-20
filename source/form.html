@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -49,56 +50,87 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="main">
+      <section class="main main--second">
         <h1 class="main__title main__title--second">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
       <section class="competition">
         <h2 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</h2>
         <form class="competition__form form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__name">
+          <fieldset class="form__name name">
+            <div class="form__wrapper">
             <label class="form__label" for="surname">Фамилия:</label>
             <input class="form__text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="form__wrapper">
             <label class="form__label" for="name">Имя:</label>
             <input class="form__text" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="form__wrapper">
             <label class="form__label" for="patronymic">Отчество</label>
             <input class="form__text" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </div>
           </fieldset>
           <fieldset class="form__details details">
             <legend class="details__legend legend">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form__checkbox" type="checkbox" id="shark" name="shark" checked>
-            <label class="form__label form__label--color" for="shark">Сделал селфи с акулой</label>
-            <input class="form__checkbox" type="checkbox" id="beach" name="beach" checked>
-            <label class="form__label form__label--color" for="beach">Обгорел на пляже</label>
-            <input class="form__checkbox" type="checkbox" id="chuck" name="chuck">
-            <label class="form__label form__label--color" for="chuck">Видел Чака Норриса</label>
-            <input class="form__checkbox" type="checkbox" id="souvenirs" name="souvenirs">
-            <label class="form__label form__label--color" for="souvenirs">Накупил сувениров</label>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="shark" name="shark" checked>
+              <label class="form__label form__label--color" for="shark">Сделал селфи с акулой</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="beach" name="beach" checked>
+              <label class="form__label form__label--color" for="beach">Обгорел на пляже</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="chuck" name="chuck">
+              <label class="form__label form__label--color" for="chuck">Видел Чака Норриса</label>
+            </div>
+            <div>
+              <input class="form__checkbox" type="checkbox" id="souvenirs" name="souvenirs">
+              <label class="form__label form__label--color" for="souvenirs">Накупил сувениров</label>
+            </div>
+            <div>
             <input class="form__checkbox" type="checkbox" id="tower" name="tower">
             <label class="form__label form__label--color" for="tower">Удержал башню</label>
+            </div>
+            <div>
             <input class="form__checkbox" type="checkbox" id="hotel" name="hotel" checked>
             <label class="form__label form__label--color" for="hotel">Разгромил отель</label>
+            </div>
           </fieldset>
           <fieldset class="form__number number">
-            <label class="form__label" for="number">Номер телефона</label>
-            <input class="form__text" type="text" id="number" name="number" placeholder="Номер, пожалуйста">
-            <label class="form__label" for="address">Адрес почты</label>
-            <input class="form__text" type="text" id="address" name="address" placeholder="Введите почту *" required>
+            <legend class="number__legend legend">Контактная информация</legend>
+            <div class="form__wrapper form__wrapper--control">
+              <label class="form__label form__label--control" for="number">Номер телефона</label>
+              <input class="form__text" type="text" id="number" name="number" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__wrapper form__wrapper--control">
+              <label class="form__label form__label--control" for="address">Адрес почты</label>
+              <input class="form__text" type="text" id="address" name="address" placeholder="Введите почту *" required>
+            </div>
           </fieldset>
           <fieldset class="form__app app">
             <legend class="app__legend legend">С каким приложением путешествовали?</legend>
-            <input class="form__checkbox details__checkbox" type="checkbox" id="iOS" name="ios" checked>
-            <label class="form__label form__label--color" for="iOS">Pink для iOS</label>
-            <input class="form__checkbox details__checkbox" type="checkbox" id="android" name="android">
-            <label class="form__label form__label--color" for="android">Pink на Android</label>
-            <input class="form__checkbox details__checkbox" type="checkbox" id="windows" name="windows">
-            <label class="form__label form__label--color" for="windows">Windows phone</label>
+            <div>
+              <input class="form__checkbox details__checkbox" type="checkbox" id="iOS" name="ios" checked>
+              <label class="form__label form__label--color" for="iOS">Pink для iOS</label>
+            </div>
+            <div>
+              <input class="form__checkbox details__checkbox" type="checkbox" id="android" name="android">
+              <label class="form__label form__label--color" for="android">Pink на Android</label>
+            </div>
+            <div>
+              <input class="form__checkbox details__checkbox" type="checkbox" id="windows" name="windows">
+              <label class="form__label form__label--color" for="windows">Windows phone</label>
+            </div>
           </fieldset>
           <fieldset class="form__review review">
             <legend class="review__legend legend">Опишите свои эмоции</legend>
-            <input class="form__text" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <input class="form__text form__text--control" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
           </fieldset>
-          <button class="form__button" type="submit">Отправить форму</button>
-          <p class="competition__text"><span class="competition__text--color">*</span> &mdash; Обязательные поля</p>
+          <div class="form__item">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <p class="competition__text"><span class="competition__text--color">*</span> &mdash; Обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>

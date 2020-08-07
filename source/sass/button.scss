@@ -5,10 +5,38 @@
   &--upload {
     border-color: $contacts-link-color;
     border-radius: 30px;
+    max-height: 55px;
+
+    @media #{$mobile} {
+      max-width: 280px;
+    }
+
+    @media #{$tablet} {
+      max-width: 260px;
+      grid-column: 2/3;
+    }
+
+    @media #{$desktop} {
+      min-width: 183px;
+      grid-column: 2/3;
+    }
   }
 
   &--cancel {
     border-color: rgba($text-color, 0.1);
     border-radius: 30px;
+    max-height: 55px;
+
+    @media #{$mobile} {
+      max-width: 280px;
+    }
+
+    @media #{$tablet} {
+      max-width: 260px;
+    }
+
+    @media #{$desktop} {
+      min-width: 183px;
+    }
   }
 }

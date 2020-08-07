@@ -1,0 +1,135 @@
+.main {
+  background: $main-background;
+  font-weight: 300;
+  color: $white;
+
+  @media #{$mobile} {
+    min-height: 733px;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat center left,
+      url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  }
+
+  @media #{$tablet} {
+    min-height: 729px;
+    background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+  }
+
+  @media #{$desktop} {
+    min-height: 853px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom,
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+  }
+
+  &--second {
+    @media #{$mobile} {
+      min-height: 237px;
+      background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+    }
+
+    @media #{$tablet} {
+      min-height: 440px;
+      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    }
+
+    @media #{$desktop} {
+      min-height: 394px;
+      background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    }
+  }
+}
+
+.main__wrapper {
+  display: grid;
+  text-align: center;
+
+  @media #{$mobile} {
+    width: 87%;
+    margin: 0 auto;
+    min-height: 733px;
+    grid-template-rows: 1fr min-content min-content min-content;
+    justify-content: center;
+    gap: 31px;
+    padding: 0 20px;
+  }
+
+  @media #{$tablet} {
+    width: 40%;
+    grid-template-rows: min-content min-content min-content min-content;
+    justify-content: center;
+    gap: 39px;
+    padding: 0 20px;
+  }
+
+  @media #{$desktop} {
+    width: 25%;
+    grid-template-rows: min-content min-content min-content min-content;
+    gap: 51px;
+    padding: 0 130px;
+    justify-content: center;
+  }
+}
+
+.main__title {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+
+  @media #{$mobile} {
+    max-width: 240px;
+    padding-top: 80px;
+  }
+
+  @media #{$tablet} {
+    max-width: 200px;
+    padding-top: 100px;
+    font-size: 40px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 180px;
+    max-width: 250px;
+    font-size: 50px;
+  }
+
+  &--second {
+    text-align: center;
+
+    @media #{$tablet} {
+      max-width: 480px;
+      font-size: 50px;
+    }
+
+    @media #{$desktop} {
+      max-width: 760px;
+      font-size: 50px;
+    }
+  }
+}
+
+.main__links {
+  display: flex;
+  justify-content: center;
+}
+
+.main__link {
+  font-size: 18px;
+  font-weight: 700;
+  color: inherit;
+  max-width: 280px;
+  align-self: center;
+
+  @media #{$tablet} {
+    max-width: 300px;
+  }
+
+  @media #{$desktop} {
+    max-width: 300px;
+    font-size: 21px;
+  }
+}
+
+.main__note {
+  max-width: 240px;
+  margin: 0 auto;
+}

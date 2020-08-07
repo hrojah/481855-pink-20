@@ -1,0 +1,8 @@
+.form__name {
+  border: none;
+
+  @media #{$tablet} {
+    border: none;
+    order: -3;
+  }
+}

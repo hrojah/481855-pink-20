@@ -1,0 +1,157 @@
+fieldset {
+  padding: 0;
+
+  @media #{$mobile} {
+    border: none;
+  }
+}
+
+.form {
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media #{$desktop} {
+    padding: 0 130px;
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &--color {
+    background-color: $advantages-background;
+
+    @media #{$mobile} {
+      display: grid;
+      padding: 0 20px;
+      justify-content: center;
+    }
+
+    @media #{$tablet} {
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content min-content;
+    }
+
+    @media #{$desktop} {
+      padding: 57px 60px 57px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content min-content;
+    }
+  }
+}
+
+.form__wrapper {
+  display: flex;
+
+  @media #{$mobile} {
+    flex-direction: column;
+  }
+
+  &--control {
+    @media #{$tablet} {
+      flex-direction: column;
+    }
+
+    @media #{$desktop} {
+      flex-direction: column;
+    }
+  }
+}
+
+.form__label {
+  text-transform: uppercase;
+  color: $contacts-link-color;
+
+  @media #{$mobile} {
+    padding-left: 21px;
+  }
+
+  &--color {
+    text-transform: none;
+    font-size: 18px;
+    color: $text-color;
+  }
+
+  &--control {
+    @media #{$tablet} {
+      order: 1;
+    }
+
+    @media #{$desktop} {
+      order: 1;
+    }
+  }
+}
+
+.form__text {
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+
+  @media #{$tablet} {
+    flex-grow: 1;
+  }
+
+  @media #{$desktop} {
+    flex-grow: 1;
+  }
+
+  &--control {
+    @media #{$mobile} {
+      min-height: 197px;
+    }
+
+    @media #{$tablet} {
+      width: 100%;
+    }
+
+    @media #{$desktop} {
+      width: 100%;
+    }
+  }
+}
+
+.form__checkbox {
+  margin: 0;
+}
+
+.form__item {
+  display: flex;
+
+  @media #{$mobile} {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media #{$tablet} {
+    justify-content: space-between;
+  }
+
+  @media #{$desktop} {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+    justify-content: space-between;
+  }
+}
+
+.form__button {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  background-color: $submit-button-color;
+  border: 2px solid $submit-button-color;
+  border-radius: 1px;
+
+  @media #{$mobile} {
+    min-width: 276px;
+  }
+}

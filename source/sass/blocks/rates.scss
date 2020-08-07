@@ -1,32 +1,48 @@
 .rates {
   background-color: $advantages-background;
   text-transform: uppercase;
-  line-height: 30px;
+
+  @media #{$tablet} {
+    padding: 0 22px;
+  }
+
+  @media #{$desktop} {
+    padding: 0 130px;
+  }
+}
+
+.rates__item {
+  min-width: 276px;
 }
 
 .rates__title {
-  margin: 0;
   font-size: 16px;
   font-weight: 700;
   color: $white;
 }
 
 .rates__text {
-  margin: 0;
   font-size: 18px;
   font-weight: 300;
   color: $white;
 }
 
 .rates__details {
-  margin: 0;
   padding: 0;
   list-style: none;
   background-color: $white;
 }
 
 .rates__toggles {
-  margin: 0;
+  text-align: center;
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
 }
 
 .detail__item {
@@ -34,7 +50,7 @@
   border-radius: 0 0 0 1px;
 }
 
-.slider-wrapper {
+.slider__wrapper {
   border: 2px solid $text-color;
   border-radius: 1px 0 0 0;
   background-color: $text-color;
