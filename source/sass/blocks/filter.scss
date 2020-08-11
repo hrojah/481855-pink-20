@@ -24,19 +24,49 @@
 }
 
 .filter__wrapper {
-  display: flex;
-  justify-content: space-around;
+  @media #{$mobile} {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 
   @media #{$tablet} {
+    max-width: 660px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
   }
 
   @media #{$desktop} {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 57px 60px 57px 80px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+  }
+
+  &--control {
+
+    display: flex;
+    justify-content: space-around;
+
+    @media #{$tablet} {
+      display: grid;
+    }
+
+    @media #{$desktop} {
+      display: grid;
+    }
   }
 }
 
-.filter__foto {
+.filter__photo {
   @media #{$tablet} {
     grid-row: 1/-1;
   }

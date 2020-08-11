@@ -1,108 +1,114 @@
+.page-main {
+  @media #{$tablet} {
+    margin-top: -41px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -41px;
+  }
+}
+
 .main {
-  background: $main-background;
   font-weight: 300;
   color: $white;
 
   @media #{$mobile} {
-    min-height: 733px;
-    background: url("../img/iphone-hand-mobile@1x.png") no-repeat center left,
-      url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+    min-height: 237px;
+    margin-top: -19px;
+    background: $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   }
 
   @media #{$tablet} {
-    min-height: 729px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
-      url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    min-height: 440px;
+    background: $main-background url("../img/bg-back-tablet@1x.jpg") no-repeat center;
   }
 
   @media #{$desktop} {
-    min-height: 853px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom,
-      url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    min-height: 394px;
+    background: $main-background url("../img/bg-back-desktop@1x.jpg") no-repeat center;
   }
 
-  &--second {
+  &--first {
     @media #{$mobile} {
-      min-height: 237px;
-      background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+      min-height: 733px;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat center left,
+        $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center;
     }
 
     @media #{$tablet} {
-      min-height: 440px;
-      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+      min-height: 729px;
+      background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
+        url("../img/bg-back-tablet@1x.jpg") no-repeat center/cover;
     }
 
     @media #{$desktop} {
-      min-height: 394px;
-      background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+      min-height: 853px;
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom,
+        url("../img/bg-back-desktop@1x.jpg") no-repeat center/cover;
     }
   }
 }
 
 .main__wrapper {
-  display: grid;
-  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   @media #{$mobile} {
-    width: 87%;
-    margin: 0 auto;
     min-height: 733px;
-    grid-template-rows: 1fr min-content min-content min-content;
-    justify-content: center;
-    gap: 31px;
     padding: 0 20px;
+    max-width: 320px;
+    text-align: center;
   }
 
   @media #{$tablet} {
-    width: 40%;
-    grid-template-rows: min-content min-content min-content min-content;
-    justify-content: center;
-    gap: 39px;
     padding: 0 20px;
+    max-width: 660px;
   }
 
   @media #{$desktop} {
-    width: 25%;
-    grid-template-rows: min-content min-content min-content min-content;
-    gap: 51px;
     padding: 0 130px;
-    justify-content: center;
+    max-width: 1200px;
   }
 }
 
 .main__title {
   font-size: 24px;
   font-weight: 300;
-  margin: 0 auto;
+  max-width: 240px;
+  padding-top: 95px;
+  text-align: center;
 
   @media #{$mobile} {
     max-width: 240px;
-    padding-top: 80px;
+    padding-top: 95px;
+    margin: 0 auto 349px auto;
   }
 
   @media #{$tablet} {
     max-width: 200px;
-    padding-top: 100px;
+    padding-top: 211px;
     font-size: 40px;
   }
 
   @media #{$desktop} {
-    padding-top: 180px;
+    padding-top: 224px;
     max-width: 250px;
     font-size: 50px;
   }
 
   &--second {
-    text-align: center;
-
     @media #{$tablet} {
       max-width: 480px;
       font-size: 50px;
+      padding-top: 191px;
+      margin: 0 auto;
     }
 
     @media #{$desktop} {
       max-width: 760px;
       font-size: 50px;
+      padding-top: 184px;
+      margin: 0 auto;
     }
   }
 }
@@ -110,6 +116,14 @@
 .main__links {
   display: flex;
   justify-content: center;
+
+  @media #{$tablet} {
+    max-width: 300px;
+  }
+
+  @media #{$desktop} {
+    max-width: 300px;
+  }
 }
 
 .main__link {
@@ -118,6 +132,11 @@
   color: inherit;
   max-width: 280px;
   align-self: center;
+
+  &--store {
+    margin-top: 32px;
+    margin-bottom: 28px;
+  }
 
   @media #{$tablet} {
     max-width: 300px;
@@ -131,5 +150,8 @@
 
 .main__note {
   max-width: 240px;
-  margin: 0 auto;
+
+  @media #{$mobile} {
+    margin: 0 auto;
+  }
 }

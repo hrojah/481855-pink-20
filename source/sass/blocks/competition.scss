@@ -18,24 +18,34 @@
   }
 }
 
-.competition__form {
-  margin: 0 auto;
-
+.competition__wrapper {
   @media #{$mobile} {
-    width: 86%;
+    box-sizing: border-box;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 22px;
   }
 
   @media #{$tablet} {
-    width: 93%;
+    box-sizing: border-box;
+    max-width: 660px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 
   @media #{$desktop} {
-    width: 78%;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.competition__text {
-  &--color {
-    color: $contacts-link-color;
-  }
+.competition__note {
+  color: $contacts-link-color;
 }

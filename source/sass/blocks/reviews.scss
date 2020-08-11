@@ -2,16 +2,21 @@
   text-align: center;
 
   @media #{$mobile} {
+    max-width: 320px;
+    margin: 0 auto;
     padding: 0 20px;
   }
 
   @media #{$tablet} {
-    width: 94%;
+    max-width: 660px;
+    margin: 0 auto;
     padding: 0 20px;
   }
 
   @media #{$desktop} {
-    width: 78%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 0 130px;
   }
 }

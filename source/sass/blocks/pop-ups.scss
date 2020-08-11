@@ -1,0 +1,74 @@
+.pop-up {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  background: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media #{$mobile} {
+    max-width: 320px;
+  }
+
+  @media #{$tablet} {
+    width: 460px;
+    min-height: 363px;
+  }
+
+  @media #{$desktop} {
+    width: 780px;
+    min-height: 377px;
+  }
+}
+
+.pop-up__title {
+  font-weight: 700;
+  color: $black;
+
+  @media #{$mobile} {
+    font-size: 18px;
+  }
+
+  @media #{$tablet} {
+    font-size: 30px;
+  }
+
+  @media #{$desktop} {
+    font-size: 30px;
+  }
+}
+
+.pop-up__text {
+  @media #{$tablet} {
+    font-size: 18px;
+  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+  }
+}
+
+.pop-up__button {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  background-color: $submit-button-color;
+  border: 2px solid $submit-button-color;
+  border-radius: 1px;
+}
+
+.pop-up__wrapper--color {
+  background-color: $advantages-background;
+
+  @media #{$mobile} {
+    border-radius: 0 0 1px 1px;
+  }
+
+  @media #{$tablet} {
+    border-radius: 0 0 5px 5px;
+  }
+
+  @media #{$desktop} {
+    border-radius: 0 0 5px 5px;
+  }
+}

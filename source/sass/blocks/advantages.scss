@@ -10,28 +10,38 @@
     gap: 42px;
     background: $advantages-background url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom -38px;
   }
+}
 
+.advantages__wrapper {
   @media #{$tablet} {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 0 20px;
     min-height: 490px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: $advantages-background url("../img/iphone-screen-3-tablet@1x.png") no-repeat bottom left 20px;
-    padding: 0 20px;
     text-align: left;
   }
 
   @media #{$desktop} {
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 154px;
     min-height: 760px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: flex-end;
     justify-items: center;
-    padding: 0 154px;
   }
 }
 
 .advantages__item {
+  margin-left: auto;
+
   &--mood {
     @media #{$desktop} {
       background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;

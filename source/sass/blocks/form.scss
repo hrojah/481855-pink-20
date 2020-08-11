@@ -7,40 +7,8 @@ fieldset {
 }
 
 .form {
-  @media #{$tablet} {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media #{$desktop} {
-    padding: 0 130px;
-    display: grid;
-    grid-template-rows: min-content min-content min-content min-content min-content;
-    grid-template-columns: 1fr 1fr;
-  }
-
   &--color {
     background-color: $advantages-background;
-
-    @media #{$mobile} {
-      display: grid;
-      padding: 0 20px;
-      justify-content: center;
-    }
-
-    @media #{$tablet} {
-      padding: 0 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: min-content min-content;
-    }
-
-    @media #{$desktop} {
-      padding: 57px 60px 57px 80px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: min-content min-content;
-    }
   }
 }
 
@@ -154,4 +122,10 @@ fieldset {
   @media #{$mobile} {
     min-width: 276px;
   }
+}
+
+.form__crop {
+  height: 2px;
+  color: $text-color;
+  margin: 0;
 }

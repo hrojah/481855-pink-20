@@ -16,3 +16,10 @@
     display: none;
   }
 }
+
+.number__wrapper {
+  @media #{$desktop} {
+    display: flex;
+    justify-content: space-between;
+  }
+}

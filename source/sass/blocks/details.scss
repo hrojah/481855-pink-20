@@ -13,3 +13,11 @@
     padding: 0 60px;
   }
 }
+
+.details__wrapper {
+  @media #{$desktop} {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
