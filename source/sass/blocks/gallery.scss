@@ -73,6 +73,10 @@
   }
 }
 
+.gallery__photo {
+  width: 100%;
+}
+
 .gallery__item {
   box-sizing: border-box;
   background-color: $advantages-background;
@@ -102,6 +106,8 @@
 }
 
 .gallery__user {
+  margin: 0;
+
   &--size {
     font-size: 12px;
     font-weight: 300;
