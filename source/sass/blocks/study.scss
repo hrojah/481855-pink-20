@@ -5,8 +5,9 @@
 }
 
 .study__wrapper {
+  box-sizing: border-box;
+
   @media #{$tablet} {
-    box-sizing: border-box;
     min-height: 330px;
     max-width: 660px;
     margin: 0 auto;
@@ -15,7 +16,6 @@
   }
 
   @media #{$desktop} {
-    box-sizing: border-box;
     max-width: 1200px;
     min-height: 430px;
     padding: 0 130px;

@@ -8,6 +8,8 @@
 }
 
 .advantages__wrapper {
+  box-sizing: border-box;
+
   @media #{$mobile} {
     max-width: 320px;
     margin: 0 auto;
@@ -15,7 +17,6 @@
   }
 
   @media #{$tablet} {
-    box-sizing: border-box;
     margin: 0 auto;
     max-width: 660px;
     padding: 0 20px;
@@ -30,7 +31,6 @@
   @media #{$desktop} {
     margin: 0 auto;
     max-width: 1200px;
-    box-sizing: border-box;
     padding: 0 154px;
     min-height: 555px;
     display: flex;
