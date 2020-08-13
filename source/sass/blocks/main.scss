@@ -4,7 +4,7 @@
   }
 
   @media #{$desktop} {
-    margin-top: -41px;
+    margin-top: -42px;
   }
 }
 
@@ -31,7 +31,7 @@
   &--first {
     @media #{$mobile} {
       min-height: 733px;
-      background: url("../img/iphone-hand-mobile@1x.png") no-repeat center left,
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat center,
         $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center;
     }
 
@@ -81,7 +81,7 @@
   @media #{$mobile} {
     max-width: 240px;
     padding-top: 95px;
-    margin: 0 auto 349px auto;
+    margin: 0 auto;
   }
 
   @media #{$tablet} {

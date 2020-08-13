@@ -1,5 +1,6 @@
 .reviews__wrapper {
   text-align: center;
+  box-sizing: border-box;
 
   @media #{$mobile} {
     max-width: 320px;

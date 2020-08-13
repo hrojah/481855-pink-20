@@ -7,8 +7,32 @@ fieldset {
 }
 
 .form {
+  @media #{$tablet} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media #{$desktop} {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+  }
+
   &--color {
     background-color: $advantages-background;
+
+    @media #{$tablet} {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content min-content;
+    }
+
+    @media #{$desktop} {
+      padding: 57px 60px 57px 80px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content min-content;
+    }
   }
 }
 

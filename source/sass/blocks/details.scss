@@ -1,6 +1,6 @@
 .details {
   @media #{$mobile} {
-    background-color: $advantages-background;
+    padding: 0 22px;
   }
 
   @media #{$tablet} {
@@ -8,8 +8,6 @@
   }
 
   @media #{$desktop} {
-    grid-column: 1/-1;
-    grid-row: 3/4;
     padding: 0 60px;
   }
 }
@@ -19,5 +17,16 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &--control {
+    @media #{$mobile} {
+      background-color: $advantages-background;
+    }
+
+    @media #{$desktop} {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+    }
   }
 }
