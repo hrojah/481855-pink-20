@@ -56,9 +56,9 @@
         <h1 class="main__title main__title--second">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
       <section class="competition">
-        <div class="competition__wrapper">
-          <h2 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</h2>
-          <form class="competition__form form" action="https://echo.htmlacademy.ru" method="get">
+        <h2 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</h2>
+        <form class="competition__form form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="competition__wrapper">
             <fieldset class="form__name name">
               <div class="form__wrapper">
                 <label class="form__label" for="surname">Фамилия:</label>
@@ -73,7 +73,9 @@
                 <input class="form__text" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
-            <div class="details__wrapper--control">
+          </div>
+          <div class="details__wrapper--control">
+            <div class="competition__wrapper">
               <fieldset class="form__details details">
                 <legend class="details__legend legend">Ваши безбашенные достижения в путешествии</legend>
                 <div class="details__wrapper">
@@ -104,6 +106,8 @@
                 </div>
               </fieldset>
             </div>
+          </div>
+          <div class="competition__wrapper">
             <fieldset class="form__number number">
               <legend class="number__legend legend">Контактная информация</legend>
               <div class="number__wrapper">
@@ -117,7 +121,9 @@
                 </div>
               </div>
             </fieldset>
-            <div class="app__wrapper">
+          </div>
+          <div class="app__wrapper">
+            <div class="competition__wrapper">
               <fieldset class="form__app app">
                 <legend class="app__legend legend">С каким приложением путешествовали?</legend>
                 <div>
@@ -134,6 +140,8 @@
                 </div>
               </fieldset>
             </div>
+          </div>
+          <div class="competition__wrapper">
             <fieldset class="form__review review">
               <legend class="review__legend legend">Опишите свои эмоции</legend>
               <input class="form__text form__text--control" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях">
@@ -142,8 +150,8 @@
               <button class="form__button" type="submit">Отправить форму</button>
               <p class="competition__text"><span class="competition__note">*</span> &mdash; Обязательные поля</p>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
