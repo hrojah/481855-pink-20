@@ -18,24 +18,27 @@
   }
 }
 
-.competition__form {
-  margin: 0 auto;
+.competition__wrapper {
+  box-sizing: border-box;
 
   @media #{$mobile} {
-    width: 86%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   @media #{$tablet} {
-    width: 93%;
+    max-width: 660px;
+    padding: 0 20px;
+    margin: 0 auto;
   }
 
   @media #{$desktop} {
-    width: 78%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
   }
 }
 
-.competition__text {
-  &--color {
-    color: $contacts-link-color;
-  }
+.competition__note {
+  color: $contacts-link-color;
 }

@@ -1,0 +1,23 @@
+.nav {
+  color: $white;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: flex;
+
+  @media #{$desktop} {
+    padding-right: 130px;
+  }
+}
+
+.nav__toggle {
+  margin-left: auto;
+
+  @media #{$mobile} {
+    transform: translateY(-13px);
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
+}

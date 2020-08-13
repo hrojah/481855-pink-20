@@ -1,24 +1,45 @@
 .rates {
   background-color: $advantages-background;
   text-transform: uppercase;
+  overflow: hidden;
+}
+
+.rates__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media #{$mobile} {
+    max-width: 320px;
+  }
 
   @media #{$tablet} {
-    padding: 0 22px;
+    max-width: 660px;
   }
 
   @media #{$desktop} {
+    max-width: 1200px;
     padding: 0 130px;
   }
 }
 
-.rates__item {
-  min-width: 276px;
+.rates__table {
+  border-collapse: collapse;
+
+  @media #{$mobile} {
+    width: 1104px;
+    transform: translateX(-48%);
+    transition: 0.5s;
+  }
 }
 
 .rates__title {
   font-size: 16px;
   font-weight: 700;
   color: $white;
+  border: 2px solid $advantages-background;
+  border-radius: 1px 0 0 0;
+  background-color: $text-color;
+  width: 276px;
 }
 
 .rates__text {
@@ -27,10 +48,23 @@
   color: $white;
 }
 
-.rates__details {
-  padding: 0;
-  list-style: none;
+.rates__detail {
+  width: 276px;
+  border: 2px solid $border-color;
+  border-radius: 0 0 0 1px;
   background-color: $white;
+}
+
+.rates__item {
+  padding-left: 20px;
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
 }
 
 .rates__toggles {
@@ -43,15 +77,4 @@
   @media #{$desktop} {
     display: none;
   }
-}
-
-.detail__item {
-  border: 2px solid $border-color;
-  border-radius: 0 0 0 1px;
-}
-
-.slider__wrapper {
-  border: 2px solid $text-color;
-  border-radius: 1px 0 0 0;
-  background-color: $text-color;
 }

@@ -13,7 +13,6 @@ fieldset {
   }
 
   @media #{$desktop} {
-    padding: 0 130px;
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content;
     grid-template-columns: 1fr 1fr;
@@ -22,14 +21,7 @@ fieldset {
   &--color {
     background-color: $advantages-background;
 
-    @media #{$mobile} {
-      display: grid;
-      padding: 0 20px;
-      justify-content: center;
-    }
-
     @media #{$tablet} {
-      padding: 0 20px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: min-content min-content;
@@ -154,4 +146,10 @@ fieldset {
   @media #{$mobile} {
     min-width: 276px;
   }
+}
+
+.form__crop {
+  height: 2px;
+  color: $text-color;
+  margin: 0;
 }

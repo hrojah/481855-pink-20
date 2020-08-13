@@ -3,35 +3,50 @@
   text-align: center;
 
   @media #{$mobile} {
-    min-height: 820px;
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
-    justify-content: center;
-    gap: 42px;
     background: $advantages-background url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom -38px;
+  }
+}
+
+.advantages__wrapper {
+  box-sizing: border-box;
+
+  @media #{$mobile} {
+    max-width: 320px;
+    margin: 0 auto;
+    min-height: 820px;
   }
 
   @media #{$tablet} {
+    margin: 0 auto;
+    max-width: 660px;
+    padding: 0 20px;
     min-height: 490px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: $advantages-background url("../img/iphone-screen-3-tablet@1x.png") no-repeat bottom left 20px;
-    padding: 0 20px;
     text-align: left;
   }
 
   @media #{$desktop} {
-    min-height: 760px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: flex-end;
-    justify-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 0 154px;
+    min-height: 555px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .advantages__item {
+  @media #{$tablet} {
+    margin-left: auto;
+  }
+
+  @media #{$desktop} {
+    padding-top: 332px;
+  }
+
   &--mood {
     @media #{$desktop} {
       background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
@@ -59,12 +74,14 @@
   @media #{$desktop} {
     font-size: 30px;
     max-width: 240px;
+    margin: 0 auto;
   }
 }
 
 .advantages__description {
   @media #{$mobile} {
     max-width: 270px;
+    margin: 0 auto;
   }
 
   @media #{$tablet} {
@@ -74,5 +91,6 @@
   @media #{$desktop} {
     font-size: 18px;
     max-width: 245px;
+    margin: 0;
   }
 }

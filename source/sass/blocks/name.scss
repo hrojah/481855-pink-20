@@ -1,5 +1,9 @@
-.form__name {
+.name {
   border: none;
+
+  @media #{$mobile} {
+    padding: 0 22px;
+  }
 
   @media #{$tablet} {
     border: none;

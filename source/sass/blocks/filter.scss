@@ -1,9 +1,3 @@
-.filter {
-  @media #{$desktop} {
-    padding: 0 130px;
-  }
-}
-
 .filter__title {
   font-size: 14px;
   font-weight: 400;
@@ -24,19 +18,42 @@
 }
 
 .filter__wrapper {
-  display: flex;
-  justify-content: space-around;
+  box-sizing: border-box;
+
+  @media #{$mobile} {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   @media #{$tablet} {
-    display: grid;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media #{$desktop} {
-    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+
+  &--control {
+
+    display: flex;
+    justify-content: space-around;
+
+    @media #{$tablet} {
+      display: grid;
+    }
+
+    @media #{$desktop} {
+      display: grid;
+    }
   }
 }
 
-.filter__foto {
+.filter__photo {
   @media #{$tablet} {
     grid-row: 1/-1;
   }

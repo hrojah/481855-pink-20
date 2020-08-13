@@ -2,18 +2,26 @@
   @media #{$mobile} {
     display: none;
   }
+}
+
+.study__wrapper {
+  box-sizing: border-box;
 
   @media #{$tablet} {
     min-height: 330px;
+    max-width: 660px;
+    margin: 0 auto;
     padding: 0 20px;
     background: url("../img/timer-tablet.png") no-repeat center left 20px;
   }
 
   @media #{$desktop} {
-    display: grid;
-    align-items: center;
+    max-width: 1200px;
     min-height: 430px;
     padding: 0 130px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
     background: url("../img/timer-desktop.png") no-repeat center left 131px;
   }
 }
@@ -21,14 +29,16 @@
 .study__item {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 
   @media #{$tablet} {
+    margin-left: auto;
     width: 47%;
   }
 
   @media #{$desktop} {
     width: 45%;
+    margin: 0 auto;
+    padding-left: 200px;
   }
 }
 
