@@ -1,3 +1,13 @@
 .map {
   width: 100%;
+  vertical-align: bottom;
+
+  @media #{$tablet} {
+    min-height: 396px;
+  }
+
+  @media #{$desktop} {
+    min-height: 502px;
+    padding-top: 19px;
+  }
 }

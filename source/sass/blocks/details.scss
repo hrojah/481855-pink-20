@@ -1,32 +1,152 @@
 .details {
+  margin: 0;
+  box-sizing: border-box;
+
   @media #{$mobile} {
     padding: 0 22px;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   @media #{$tablet} {
+    margin-top: 59px;
     padding: 0 60px;
+    min-height: 560px;
   }
 
   @media #{$desktop} {
-    padding: 0 60px;
+    margin-top: 57px;
+  }
+}
+
+.details__legend {
+  line-height: 18px;
+
+  @media #{$mobile} {
+    padding-top: 39px;
   }
 }
 
 .details__wrapper {
+  @media #{$mobile} {
+    min-height: 491px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-bottom: 38px;
+  }
+
+  @media #{$tablet} {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-height: 493px;
+    padding-top: 47px;
+    padding-left: 57px;
+  }
+
   @media #{$desktop} {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 334px 1fr 1fr;
+    justify-items: end;
+    min-height: 219px;
   }
 
   &--control {
+    box-sizing: border-box;
+
     @media #{$mobile} {
       background-color: $advantages-background;
+    }
+
+    @media #{$tablet} {
+      min-width: 620px;
+      margin: 0 20px;
     }
 
     @media #{$desktop} {
       grid-column: 1/-1;
       grid-row: 3/4;
     }
+  }
+}
+
+.details__item {
+  @media #{$mobile} {
+    padding-top: 33px;
+  }
+
+  &:first-child {
+    @media #{$desktop} {
+      order: -3;
+    }
+  }
+
+  &:nth-child(3) {
+    @media #{$desktop} {
+      order: -2;
+      padding-right: 4px;
+    }
+  }
+
+  &:nth-child(5) {
+    @media #{$desktop} {
+      order: -1;
+      padding-right: 47px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media #{$desktop} {
+      padding-right: 39px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media #{$desktop} {
+      padding-right: 13px;
+    }
+  }
+
+  &:last-child {
+    @media #{$desktop} {
+      padding-right: 42px;
+    }
+  }
+
+  &:nth-child(odd) {
+    @media #{$desktop} {
+      padding-top: 47px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media #{$desktop} {
+      padding-top: 19px;
+    }
+  }
+}
+
+.details__item > .form__label {
+  @media #{$mobile} {
+    padding-left: 57px;
+  }
+}
+
+.details__item > .form__label::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  left: -2px;
+  bottom: -8px;
+  background-image: url("../img/checkbox-off.svg");
+
+  @media #{$tablet} {
+    left: -59px;
+  }
+
+  @media #{$desktop} {
+    left: -59px;
   }
 }

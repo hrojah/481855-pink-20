@@ -1,7 +1,17 @@
 .rates {
-  background-color: $advantages-background;
   text-transform: uppercase;
   overflow: hidden;
+  background-color: $advantages-background;
+
+  @media #{$mobile} {
+    background: url("../img/grey background-.png") no-repeat top 3px center/cover;
+  }
+
+  @media #{$tablet} {
+    min-height: 288px;
+    padding-top: 111px;
+    background: url("../img/grey background-.png") no-repeat top -39px center/cover;
+  }
 }
 
 .rates__wrapper {
@@ -10,15 +20,17 @@
 
   @media #{$mobile} {
     max-width: 320px;
+    padding-top: 128px;
   }
 
   @media #{$tablet} {
     max-width: 660px;
+    padding: 0 20px;
   }
 
   @media #{$desktop} {
     max-width: 1200px;
-    padding: 0 130px;
+    padding: 138px 130px 98px 130px;
   }
 }
 
@@ -40,6 +52,14 @@
   border-radius: 1px 0 0 0;
   background-color: $text-color;
   width: 276px;
+
+  @media #{$mobile} {
+    height: 96px;
+  }
+
+  @media #{$desktop} {
+    height: 94px;
+  }
 }
 
 .rates__text {
@@ -53,6 +73,15 @@
   border: 2px solid $border-color;
   border-radius: 0 0 0 1px;
   background-color: $white;
+
+  @media #{$mobile} {
+    height: 56px;
+  }
+
+  @media #{$desktop} {
+    height: 56px;
+    width: 265px;
+  }
 }
 
 .rates__item {

@@ -13,37 +13,37 @@
   color: $white;
 
   @media #{$mobile} {
-    min-height: 237px;
+    min-height: 257px;
     margin-top: -19px;
-    background: $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+    background: $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center top 19px;
   }
 
   @media #{$tablet} {
-    min-height: 440px;
-    background: $main-background url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    min-height: 481px;
+    background: $main-background url("../img/bg-back-tablet@1x.jpg") no-repeat center top 41px;
   }
 
   @media #{$desktop} {
-    min-height: 394px;
-    background: $main-background url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    min-height: 436px;
+    background: $main-background url("../img/bg-back-desktop@1x.jpg") no-repeat center top 42px;
   }
 
   &--first {
     @media #{$mobile} {
       min-height: 733px;
       background: url("../img/iphone-hand-mobile@1x.png") no-repeat center,
-        $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+        $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
     }
 
     @media #{$tablet} {
-      min-height: 729px;
+      min-height: 737px;
       background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
         url("../img/bg-back-tablet@1x.jpg") no-repeat center/cover;
     }
 
     @media #{$desktop} {
       min-height: 853px;
-      background: url("../img/iphone-hand-desktop@1x.png") no-repeat center bottom,
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat left 146px bottom,
         url("../img/bg-back-desktop@1x.jpg") no-repeat center/cover;
     }
   }
@@ -80,49 +80,83 @@
 
   @media #{$mobile} {
     max-width: 240px;
-    padding-top: 95px;
-    margin: 0 auto;
+    padding-top: 108px;
+    line-height: 120%;
+    margin: 0 auto 356px;
   }
 
   @media #{$tablet} {
     max-width: 200px;
-    padding-top: 211px;
+    padding-top: 212px;
+    padding-left: 50px;
     font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 42px;
   }
 
   @media #{$desktop} {
-    padding-top: 224px;
+    padding-top: 209px;
+    padding-left: 25px;
     max-width: 250px;
     font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 48px;
   }
 
   &--second {
+    @media #{$mobile} {
+      line-height: 33px;
+      padding-top: 113px;
+    }
+
     @media #{$tablet} {
       max-width: 480px;
       font-size: 50px;
-      padding-top: 191px;
+      padding-top: 217px;
+      padding-left: 0;
+      line-height: 68px;
       margin: 0 auto;
     }
 
     @media #{$desktop} {
-      max-width: 760px;
+      line-height: 68px;
+      max-width: 650px;
       font-size: 50px;
-      padding-top: 184px;
+      padding-top: 211px;
       margin: 0 auto;
+      padding-left: 0;
+    }
+  }
+
+  &--control {
+    @media #{$mobile} {
+      padding-top: 114px;
+    }
+
+    @media #{$desktop} {
+      max-width: 750px;
     }
   }
 }
 
 .main__links {
   display: flex;
-  justify-content: center;
+
+  @media #{$mobile} {
+    margin: 0 38px 13px;
+    padding-top: 45px;
+  }
 
   @media #{$tablet} {
     max-width: 300px;
+    padding-top: 59px;
+    padding-left: 47px;
   }
 
   @media #{$desktop} {
-    max-width: 300px;
+    padding-left: 47px;
+    max-width: 205px;
+    justify-content: flex-start;
   }
 }
 
@@ -133,18 +167,39 @@
   max-width: 280px;
   align-self: center;
 
-  &--store {
-    margin-top: 32px;
-    margin-bottom: 28px;
-  }
-
-  @media #{$tablet} {
-    max-width: 300px;
-  }
-
   @media #{$desktop} {
-    max-width: 300px;
+    align-self: baseline;
     font-size: 21px;
+  }
+
+  &--store {
+    @media #{$mobile} {
+      margin-right: 36px;
+    }
+
+    @media #{$tablet} {
+      margin-right: 35px;
+    }
+
+    @media #{$desktop} {
+      margin-right: 35px;
+      padding-top: 75px;
+    }
+  }
+
+  &--control {
+    @media #{$mobile} {
+      margin-top: 8px;
+    }
+
+    @media #{$tablet} {
+      max-width: 300px;
+      margin-left: 1px;
+    }
+
+    @media #{$desktop} {
+      margin-left: 3px;
+    }
   }
 }
 
@@ -153,5 +208,22 @@
 
   @media #{$mobile} {
     margin: 0 auto;
+    padding-bottom: 32px;
+  }
+
+  @media #{$tablet} {
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  @media #{$desktop} {
+    line-height: 24px;
+    margin-top: 44px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 300px;
   }
 }

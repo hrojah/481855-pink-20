@@ -15,12 +15,18 @@
 
   @media #{$desktop} {
     display: flex;
-    margin-left: auto;
+    margin: -11px 1px 0 auto;
   }
 }
 
 .site-list__item {
-  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  @media #{$mobile} {
+    box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  @media #{$tablet} {
+    box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
 
   @media #{$desktop} {
     padding-left: 79px;
@@ -29,4 +35,11 @@
 
 .site-list__link {
   color: $white;
+
+  &--active {
+    @media #{$desktop} {
+      border-bottom: 2px solid $white;
+      padding-bottom: 7px;
+    }
+  }
 }
