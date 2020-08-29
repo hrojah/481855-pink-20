@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--control">
       <div class="page-header__wrapper">
         <a class="logo" href="#">
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -36,10 +36,10 @@
           </button>
           <ul class="nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Фотографии</a>
+              <a class="site-list__link site-list__link--active" href="#">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
@@ -57,7 +57,7 @@
         <h2 class="main__title main__title--second">Фотографии пользователей</h2>
       </section>
       <section class="gallery">
-        <div class="gallery__text">
+        <div class="gallery__text gallery__text--control">
           <h2 class="gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         </div>
         <img class="gallery__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
@@ -65,24 +65,24 @@
           <article class="gallery__post gallery__post--top">
             <div class="gallery__item gallery__item--top">
               <p class="gallery__user"><b>Анна</b> <span class="gallery__user gallery__user--size">(5 минут назад)</span></p>
-              <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 215</span>
+              <p class="gallery__text">Прыгать или нет? Напишите в комментарии свой совет и<br class="gallery__carry"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="gallery__likes gallery__likes--top"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 215</span></div>
             </div>
           </article>
           <article class="gallery__post">
             <img class="gallery__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото машины">
             <div class="gallery__item">
               <p class="gallery__user"><b>Левон</b> <span class="gallery__user gallery__user--size">(5 часов назад)</span></p>
-              <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 356</span>
+              <p class="gallery__text gallery__text--range">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="gallery__likes"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 356</span></div>
             </div>
           </article>
           <article class="gallery__post">
             <img class="gallery__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото барабанов">
-            <div class="gallery__item">
+            <div class="gallery__item gallery__item--control">
               <p class="gallery__user"><b>Антон</b> <span class="gallery__user gallery__user--size">(12 часов назад)</span></p>
               <p class="gallery__text">Соседи будут рады!</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 666</span>
+              <div class="gallery__likes gallery__likes--control"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 666</span></div>
             </div>
           </article>
           <article class="gallery__post">
@@ -90,79 +90,81 @@
             <div class="gallery__item">
               <p class="gallery__user"><b>Борис</b> <span class="gallery__user gallery__user--size">(20 часов назад)</span></p>
               <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 215</span>
+              <div class="gallery__likes"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 215</span></div>
             </div>
           </article>
           <article class="gallery__post">
             <img class="gallery__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото ярмарки">
-            <div class="gallery__item">
+            <div class="gallery__item gallery__item--control">
               <p class="gallery__user"><b>Сергей</b> <span class="gallery__user gallery__user--size">(25 часов назад)</span></p>
               <p class="gallery__text">Самая кубанская в мире!</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 4</span>
+              <div class="gallery__likes gallery__likes--control"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 4</span></div>
             </div>
           </article>
           <article class="gallery__post">
             <img class="gallery__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с горы">
-            <div class="gallery__item">
+            <div class="gallery__item gallery__item--control">
               <p class="gallery__user"><b>Максим</b> <span class="gallery__user gallery__user--size">(40 часов назад)</span></p>
               <p class="gallery__text">Где снег-то?</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 150</span>
+              <div class="gallery__likes gallery__likes--control"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 150</span></div>
             </div>
           </article>
           <article class="gallery__post">
             <img class="gallery__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото крыла самолёта">
-            <div class="gallery__item">
+            <div class="gallery__item gallery__item--control">
               <p class="gallery__user"><b>Надежда</b> <span class="gallery__user gallery__user--size">(45 часов назад)</span></p>
               <p class="gallery__text">Всем GM и взаимные лайки!</p>
-              <a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 2560</span>
+              <div class="gallery__likes gallery__likes--control"><a class="gallery__like">Лайк</a> <span class="gallery__number">Нравится: 2560</span></div>
             </div>
           </article>
         </div>
       </section>
       <section class="filter">
         <div class="filter__wrapper">
-          <h2 class="filter__title">Затми их всех!<br/> Выкладывай все, что накопилось в телефоне!</h2>
-          <form class="filter__form form form--color" action="https://echo.htmlacademy.ru" method="get">
-            <input class="visually-hidden" type="file" id="photo" name="photo">
-            <label class="filter__photo" for="photo">
-              <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото в фильтре">
-            </label>
-            <fieldset class="filter__fieldset">
-              <div class="filter__wrapper--control">
-                <div class="form__list filter-list">
-                  <button class="filter__item filter__item--crop" type="button">Обрезка</button>
-                  <div class="form__range form__range--active">
-                    <div class="form__scale"></div>
-                    <div class="form__toggle"></div>
+          <h2 class="filter__title">Затмите их всех!<br/> Выкладывайте все, что накопилось в телефоне!</h2>
+          <div class="filter__wrapper--color">
+            <form class="filter__form form form--color" action="https://echo.htmlacademy.ru" method="get">
+              <input class="visually-hidden" type="file" id="photo" name="photo">
+              <label class="filter__photo" for="photo">
+                <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото в фильтре">
+              </label>
+              <fieldset class="filter__fieldset">
+                <div class="filter__wrapper--control">
+                  <div class="form__list filter-list">
+                    <button class="filter__item filter__item--crop" type="button">Обрезка</button>
+                    <div class="form__range form__range--active">
+                      <div class="form__scale"></div>
+                      <div class="form__toggle"></div>
+                    </div>
+                  </div>
+                  <div class="form__list filter-list">
+                    <button class="filter__item filter__item--fill" type="button">Заливка</button>
+                    <div class="form__range form__range--control">
+                      <div class="form__scale form__scale--control"></div>
+                      <div class="form__toggle form__toggle--fill"></div>
+                    </div>
+                  </div>
+                  <div class="form__list filter-list">
+                    <button class="filter__item filter__item--contrast" type="button">Контраст</button>
+                    <div class="form__range">
+                      <div class="form__scale form__scale--contrast"></div>
+                      <div class="form__toggle form__toggle--contrast"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="form__list filter-list">
-                  <button class="filter__item filter__item--fill" type="button">Заливка</button>
-                  <div class="form__range">
-                    <div class="form__scale"></div>
-                    <div class="form__toggle"></div>
-                  </div>
-                </div>
-                <div class="form__list filter-list">
-                  <button class="filter__item filter__item--contrast" type="button">Контраст</button>
-                  <div class="form__range">
-                    <div class="form__scale"></div>
-                    <div class="form__toggle"></div>
-                  </div>
-                </div>
+              </fieldset>
+              <div class="filter__buttons">
+                <button class="form__submit button button--upload" type="submit">Запостить</button>
+                <button class="form__reset button button--cancel" type="reset" disabled>Отмена</button>
               </div>
-            </fieldset>
-            <div class="filter__buttons">
-              <button class="form__submit button--upload" type="submit">Запостить</button>
-              <button class="form__reset button--cancel" type="reset" disabled>Отмена</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
   </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="logo--footer" href="#" aria-label="">
+        <a class="logo-footer" href="#" aria-label="">
           <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>

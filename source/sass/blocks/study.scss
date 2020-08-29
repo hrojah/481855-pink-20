@@ -2,6 +2,11 @@
   @media #{$mobile} {
     display: none;
   }
+
+  @media #{$desktop} {
+    min-height: 479px;
+    background-color: $advantages-background;
+  }
 }
 
 .study__wrapper {
@@ -12,7 +17,7 @@
     max-width: 660px;
     margin: 0 auto;
     padding: 0 20px;
-    background: url("../img/timer-tablet.png") no-repeat center left 20px;
+    background: url("../img/timer-tablet.png") no-repeat top 54px left 20px;
   }
 
   @media #{$desktop} {
@@ -22,7 +27,7 @@
     margin: 0 auto;
     display: grid;
     align-items: center;
-    background: url("../img/timer-desktop.png") no-repeat center left 131px;
+    background: url("../img/timer-desktop.png") no-repeat top 68px left 131px;
   }
 }
 
@@ -31,34 +36,43 @@
   flex-direction: column;
 
   @media #{$tablet} {
-    margin-left: auto;
+    margin-left: 310px;
+    padding-top: 96px;
     width: 47%;
   }
 
   @media #{$desktop} {
     width: 45%;
     margin: 0 auto;
-    padding-left: 200px;
+    padding-left: 223px;
+    padding-top: 91px;
   }
 }
 
 .study__title {
   font-size: 30px;
   font-weight: 700;
+  margin: 0;
 
   @media #{$tablet} {
     max-width: 170px;
+    line-height: 36px;
   }
 }
 
 .study__text {
   @media #{$tablet} {
-    max-width: 310px;
+    line-height: 24px;
+    min-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media #{$desktop} {
     font-size: 18px;
-    max-width: 535px;
+    min-width: 526px;
+    margin: 0;
+    padding-top: 15px;
   }
 }
 
@@ -68,5 +82,26 @@
 
   @media #{$desktop} {
     font-size: 18px;
+    padding-top: 31px;
+  }
+}
+
+.study__carry {
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  &--control {
+    @media #{$mobile} {
+      display: none;
+    }
+
+    @media #{$desktop} {
+      display: none;
+    }
   }
 }

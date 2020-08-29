@@ -3,6 +3,7 @@
   box-sizing: border-box;
 
   @media #{$mobile} {
+    padding-top: 40px;
     min-height: 284px;
     max-width: 320px;
     margin: 0 auto;
@@ -29,7 +30,23 @@
   }
 }
 
-.page-footer__copyright {
-  display: flex;
-  align-items: center;
+.logo-footer {
+  @media #{$tablet} {
+    margin-left: -1px;
+    margin-top: -9px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -10px;
+  }
+
+  &--control {
+    @media #{$mobile} {
+      margin-top: 6px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 4px;
+    }
+  }
 }

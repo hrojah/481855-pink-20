@@ -1,32 +1,165 @@
 .details {
+  margin: 0;
+  box-sizing: border-box;
+
   @media #{$mobile} {
-    padding: 0 22px;
+    padding: 0 22px 30px 22px;
+    max-width: 320px;
+    margin: 0 auto;
+    min-height: 571px;
   }
 
   @media #{$tablet} {
-    padding: 0 60px;
+    margin-top: 59px;
+    padding: 1px 40px;
+    min-height: 560px;
   }
 
   @media #{$desktop} {
-    padding: 0 60px;
+    margin-top: 57px;
+  }
+}
+
+.details__legend {
+  line-height: 18px;
+
+  @media #{$mobile} {
+    padding-top: 39px;
+  }
+
+  @media #{$tablet} {
+    min-width: 436px;
+  }
+
+  @media #{$desktop} {
+    min-width: 433px;
   }
 }
 
 .details__wrapper {
+  box-sizing: border-box;
+
+  @media #{$mobile} {
+    background-color: $advantages-background;
+  }
+
+  @media #{$tablet} {
+    min-width: 620px;
+    margin: 0 20px;
+  }
+
   @media #{$desktop} {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    grid-row: 3/4;
   }
 
   &--control {
     @media #{$mobile} {
-      background-color: $advantages-background;
+      min-height: 491px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 7px;
+    }
+
+    @media #{$tablet} {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      min-height: 540px;
+      padding-top: 47px;
+      padding-left: 57px;
+      min-width: 300px;
     }
 
     @media #{$desktop} {
-      grid-column: 1/-1;
-      grid-row: 3/4;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 334px 1fr 1fr;
+      justify-items: end;
+      min-height: 219px;
     }
+  }
+}
+
+.details__item {
+  @media #{$mobile} {
+    width: 100%;
+    min-height: 47px;
+    padding-top: 35px;
+  }
+
+  &:first-child {
+    @media #{$desktop} {
+      order: -3;
+    }
+  }
+
+  &:nth-child(3) {
+    @media #{$desktop} {
+      order: -2;
+      padding-right: 4px;
+    }
+  }
+
+  &:nth-child(5) {
+    @media #{$desktop} {
+      order: -1;
+      padding-right: 47px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media #{$desktop} {
+      padding-right: 39px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media #{$desktop} {
+      padding-right: 13px;
+    }
+  }
+
+  &:last-child {
+    @media #{$desktop} {
+      padding-right: 42px;
+    }
+  }
+
+  &:nth-child(odd) {
+    @media #{$desktop} {
+      padding-top: 47px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media #{$desktop} {
+      padding-top: 19px;
+    }
+  }
+}
+
+.details__item > .form__label {
+  @media #{$mobile} {
+    padding-left: 57px;
+  }
+}
+
+.details__item > .form__label::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  left: -2px;
+  bottom: -8px;
+  background-image: url("../img/checkbox-off.svg");
+
+  @media #{$tablet} {
+    left: -59px;
+  }
+
+  @media #{$desktop} {
+    left: -59px;
   }
 }

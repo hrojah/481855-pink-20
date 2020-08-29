@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  align-items: center;
+
+  @media #{$mobile} {
+    padding-top: 65px;
+  }
+
+  @media #{$tablet} {
+    padding-top: 2px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 6px;
+  }
+}
+
+.copyright__text {
+  @media #{$mobile} {
+    padding-right: 15px;
+  }
+
+  @media #{$tablet} {
+    padding-right: 16px;
+  }
+
+  @media #{$desktop} {
+    font-size: 18px;
+    padding-right: 13px;
+    padding-bottom: 10px;
+  }
+}
+
+.copyright__link {
+  @media #{$mobile} {
+    padding-top: 4px;
+  }
+
+  @media #{$tablet} {
+    margin-top: 9px;
+  }
+}
