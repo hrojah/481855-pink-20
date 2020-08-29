@@ -10,13 +10,19 @@
   }
 
   @media #{$tablet} {
-    max-height: 110px;
-    margin-bottom: -110px;
+    min-height: 98px;
+    margin-bottom: -103px;
   }
 
   @media #{$desktop} {
     max-height: 110px;
     margin-bottom: -110px;
+  }
+
+  &--control {
+    @media #{$tablet} {
+      margin-bottom: -109px;
+    }
   }
 }
 

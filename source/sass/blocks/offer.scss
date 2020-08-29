@@ -47,7 +47,6 @@
   &--width {
     @media #{$mobile} {
       padding-top: 31px;
-      letter-spacing: 0.3px;
     }
 
     @media #{$tablet} {
@@ -55,7 +54,7 @@
     }
 
     @media #{$desktop} {
-      max-width: 420px;
+      max-width: 500px;
     }
   }
 }

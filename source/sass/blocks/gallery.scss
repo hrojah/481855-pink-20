@@ -105,19 +105,20 @@
   color: $white;
   padding: 6px 20px;
   right: 20px;
-  bottom: 385px;
+  bottom: 366px;
   background-color: $contacts-link-color;
 
   @media #{$tablet} {
-    right: 19px;
-    bottom: 81px;
+    right: 20px;
+    bottom: 62px;
     padding: 6px 18px;
     width: 104px;
   }
 
   @media #{$desktop} {
     right: 130px;
-    bottom: 118px;
+    bottom: 99px;
+    padding: 6px 20px 6px 19px;
   }
 }
 
@@ -186,23 +187,23 @@
 }
 
 .gallery__text {
+  line-height: 24px;
+
   @media #{$mobile} {
     margin: 0;
     padding-top: 2px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
   }
 
   @media #{$tablet} {
     margin: 0;
     grid-column: 1/-1;
     padding-top: 2px;
-    line-height: 24px;
   }
 
   @media #{$desktop} {
     margin: 0;
     grid-column: 1/-1;
-    line-height: 24px;
   }
 
   &--control {
@@ -271,4 +272,14 @@
   font-size: 12px;
   color: $contacts-link-color;
   text-transform: uppercase;
+}
+
+.gallery__carry {
+  @media #{$tablet} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
 }

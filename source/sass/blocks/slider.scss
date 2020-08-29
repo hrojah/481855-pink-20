@@ -1,0 +1,116 @@
+.slider__toggle {
+  position: absolute;
+  cursor: pointer;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba($text-color, 0.3);
+  border: none;
+
+  @media #{$desktop} {
+    background: transparent;
+  }
+
+  &--current {
+    border: 3px solid $text-color;
+    width: 12px;
+    height: 12px;
+
+    @media #{$mobile} {
+      transform: translate(-31px, 17px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(-31px, 26px);
+    }
+
+    @media #{$desktop} {
+      display: none;
+    }
+  }
+
+  &--previous {
+    @media #{$mobile} {
+      transform: translate(-4px, 20px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(-3px, 29px);
+    }
+
+    @media #{$desktop} {
+      left: -17px;
+      bottom: 109px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &--following {
+    @media #{$mobile} {
+      transform: translate(22px, 20px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(22px, 29px);
+    }
+
+    @media #{$desktop} {
+      right: -17px;
+      bottom: 109px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.rates__toggles .slider__toggle:first-child {
+  @media #{$mobile} {
+    transform: translate(-28px, 30px);
+  }
+}
+
+.rates__toggles .slider__toggle:nth-child(2) {
+  @media #{$mobile} {
+    transform: translate(-6px, 27px);
+  }
+}
+
+
+.rates__toggles .slider__toggle:last-child {
+  @media #{$mobile} {
+    transform: translate(22px, 30px);
+  }
+}
+
+.slider__toggle--previous::after {
+  content: "";
+  position: absolute;
+
+  @media #{$desktop} {
+    width: 28px;
+    height: 28px;
+    left: 23px;
+    top: 16px;
+    transform: rotate(-45deg);
+    border-top: 2px solid rgba($text-color, 0.3);
+    border-left: 2px solid rgba($text-color, 0.3);
+  }
+}
+
+.slider__toggle--following::before {
+  content: "";
+  position: absolute;
+
+  @media #{$desktop} {
+    width: 28px;
+    height: 28px;
+    left: 7px;
+    top: 16px;
+    transform: rotate(136deg);
+    border-top: 2px solid rgba($text-color, 0.3);
+    border-left: 2px solid rgba($text-color, 0.3);
+  }
+}

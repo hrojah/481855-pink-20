@@ -14,6 +14,7 @@
   @media #{$mobile} {
     max-width: 320px;
     margin: 0 auto;
+    padding-top: 43px;
   }
 
   @media #{$tablet} {
@@ -34,6 +35,8 @@
 }
 
 .contacts__item {
+  line-height: 33px;
+
   @media #{$mobile} {
     padding-top: 34px;
   }
@@ -45,7 +48,7 @@
 
   &--control {
     @media #{$mobile} {
-      padding-top: 11px;
+      padding-top: 18px;
     }
 
     @media #{$tablet} {
@@ -59,17 +62,22 @@
 
   &--grid {
     @media #{$mobile} {
-      padding-top: 15px;
+      padding-top: 22px;
+      max-width: 240px;
+      margin: 0 auto;
     }
 
     @media #{$tablet} {
       grid-column: 1/-1;
       padding-top: 36px;
+      max-width: 213px;
+      margin: 0 auto;
     }
 
     @media #{$desktop} {
       grid-column: 2/3;
       grid-row: 2/2;
+      line-height: 33px;
     }
   }
 
@@ -93,7 +101,6 @@
 
   @media #{$mobile} {
     max-width: 222px;
-    margin-top: 91px;
   }
 
   @media #{$tablet} {

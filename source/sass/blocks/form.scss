@@ -222,14 +222,14 @@ fieldset {
 
   &--control {
     @media #{$mobile} {
-      min-height: 201px;
+      padding-top: 13px;
+      padding-bottom: 154px;
     }
 
     @media #{$tablet} {
       width: 100%;
       margin-left: 0;
       padding: 17px 10px 148px 20px;
-      letter-spacing: 0.4px;
     }
 
     @media #{$desktop} {
@@ -424,5 +424,41 @@ fieldset {
       right: 118px;
       bottom: 27px;
     }
+  }
+}
+
+.form__radio:checked + .form__label::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 40px;
+  left: -2px;
+  bottom: -8px;
+  background-image: url("../img/checkbox-2.svg");
+
+  @media #{$tablet} {
+    left: -61px;
+  }
+
+  @media #{$desktop} {
+    left: -61px;
+  }
+}
+
+.form__radio + .form__label::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 40px;
+  left: -2px;
+  bottom: -8px;
+  background-image: url("../img/checkbox-off-2.svg");
+
+  @media #{$tablet} {
+    left: -61px;
+  }
+
+  @media #{$desktop} {
+    left: -61px;
   }
 }

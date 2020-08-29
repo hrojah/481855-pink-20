@@ -29,6 +29,14 @@
     padding-top: 35px;
     padding-bottom: 14px;
   }
+
+  @media #{$tablet} {
+    min-width: 256px;
+  }
+
+  @media #{$desktop} {
+    min-width: 258px;
+  }
 }
 
 .review > .form__text {

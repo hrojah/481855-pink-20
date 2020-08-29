@@ -9,6 +9,10 @@
   @media #{$tablet} {
     background: url("../img/grey background.png") no-repeat top -62px center/cover;
   }
+
+  @media #{$desktop} {
+    background: url("../img/grey background-desctop.png") no-repeat top 44px center/cover;
+  }
 }
 
 .advantages__wrapper {
@@ -24,7 +28,7 @@
   @media #{$tablet} {
     margin: 0 auto;
     max-width: 660px;
-    padding: 102px 20px 0 20px;
+    padding: 101px 20px 0 20px;
     min-height: 516px;
     display: flex;
     flex-direction: column;
@@ -77,7 +81,7 @@
 
   &--friends {
     @media #{$tablet} {
-      padding-top: 31px;
+      padding-top: 32px;
     }
 
     @media #{$desktop} {
@@ -118,5 +122,15 @@
     max-width: 245px;
     margin: 0;
     padding-top: 22px;
+  }
+}
+
+.advantages__carry {
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
   }
 }

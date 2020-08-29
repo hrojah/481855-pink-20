@@ -2,6 +2,11 @@
   @media #{$mobile} {
     display: none;
   }
+
+  @media #{$desktop} {
+    min-height: 479px;
+    background-color: $advantages-background;
+  }
 }
 
 .study__wrapper {
@@ -57,8 +62,10 @@
 
 .study__text {
   @media #{$tablet} {
-    min-width: 350px;
+    line-height: 24px;
+    min-width: 300px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media #{$desktop} {
@@ -76,5 +83,25 @@
   @media #{$desktop} {
     font-size: 18px;
     padding-top: 31px;
+  }
+}
+
+.study__carry {
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+
+  &--control {
+    @media #{$mobile} {
+      display: none;
+    }
+
+    @media #{$desktop} {
+      display: none;
+    }
   }
 }

@@ -28,6 +28,14 @@
   @media #{$mobile} {
     display: none;
   }
+
+  @media #{$tablet} {
+    min-width: 257px;
+  }
+
+  @media #{$desktop} {
+    min-width: 257px;
+  }
 }
 
 .number__wrapper {

@@ -20,7 +20,7 @@
     max-width: 800px;
     font-size: 18px;
     padding-top: 91px;
-    margin-left: 199px;
+    margin: 0 auto;
   }
 }
 
@@ -41,9 +41,7 @@
     @media #{$mobile} {
       display: none;
     }
-  }
 
-  &--control {
     @media #{$tablet} {
       display: none;
     }

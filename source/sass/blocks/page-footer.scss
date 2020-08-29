@@ -24,25 +24,9 @@
     max-width: 1200px;
     margin: 0 auto;
     min-height: 197px;
-    padding: 56px 130px 0 130px;
+    padding: 0 130px;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &--control {
-    @media #{$mobile} {
-      padding-top: 46px;
-    }
-
-    @media #{$desktop} {
-      padding-top: 1px;
-    }
-  }
-
-  &--range {
-    @media #{$mobile} {
-      padding-top: 60px;
-    }
   }
 }
 
@@ -57,6 +41,10 @@
   }
 
   &--control {
+    @media #{$mobile} {
+      margin-top: 6px;
+    }
+
     @media #{$tablet} {
       padding-top: 4px;
     }

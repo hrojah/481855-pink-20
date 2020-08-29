@@ -4,13 +4,18 @@
   background-color: $advantages-background;
 
   @media #{$mobile} {
-    background: url("../img/grey background-.png") no-repeat top 3px center/cover;
+    min-height: 546px;
+    background: url("../img/grey background-.png") no-repeat top 37px center/cover;
   }
 
   @media #{$tablet} {
-    min-height: 288px;
+    min-height: 327px;
     padding-top: 111px;
-    background: url("../img/grey background-.png") no-repeat top -39px center/cover;
+    background: url("../img/grey background-.png") no-repeat top 1px center/cover;
+  }
+
+  @media #{$desktop} {
+    background: url("../img/grey background-desctop.png") no-repeat top 33px center/cover;
   }
 }
 
@@ -20,17 +25,17 @@
 
   @media #{$mobile} {
     max-width: 320px;
-    padding-top: 128px;
+    padding-top: 165px;
   }
 
   @media #{$tablet} {
     max-width: 660px;
-    padding: 0 20px;
+    padding: 37px 20px;
   }
 
   @media #{$desktop} {
     max-width: 1200px;
-    padding: 138px 130px 98px 130px;
+    padding: 189px 130px 95px 130px;
   }
 }
 
@@ -52,13 +57,46 @@
   border-radius: 1px 0 0 0;
   background-color: $text-color;
   width: 276px;
+  position: relative;
 
   @media #{$mobile} {
-    height: 96px;
+    padding-top: 14px;
+    padding-bottom: 26px;
+  }
+
+  @media #{$tablet} {
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 8px;
   }
 
   @media #{$desktop} {
-    height: 94px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    line-height: 30px;
+  }
+}
+
+.rates__title--hit::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: -2px;
+  bottom: 23px;
+  background: url("../img/hit-mobile.svg") no-repeat;
+
+  @media #{$tablet} {
+    width: 61px;
+    height: 61px;
+    left: -1px;
+    bottom: 18px;
+    background: url("../img/hit-tablet.svg") no-repeat;
+  }
+
+  @media #{$desktop} {
+    left: 0;
+    bottom: 23px;
   }
 }
 
@@ -66,6 +104,10 @@
   font-size: 18px;
   font-weight: 300;
   color: $white;
+
+  @media #{$desktop} {
+    font-size: 24px;
+  }
 }
 
 .rates__detail {
@@ -73,14 +115,71 @@
   border: 2px solid $border-color;
   border-radius: 0 0 0 1px;
   background-color: $white;
+  position: relative;
 
   @media #{$mobile} {
     height: 56px;
   }
 
+  @media #{$tablet} {
+    min-width: 136px;
+    height: 42px;
+    padding-left: 16px;
+    text-transform: none;
+  }
+
   @media #{$desktop} {
-    height: 56px;
-    width: 265px;
+    font-size: 18px;
+    height: 61px;
+    min-width: 235px;
+    box-sizing: border-box;
+    text-transform: none;
+    padding-left: 21px;
+  }
+}
+
+.rates__detail--not-include::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background: url("../img/no.svg") no-repeat;
+
+  @media #{$mobile} {
+    right: 17px;
+  }
+
+  @media #{$tablet} {
+    left: 64px;
+    bottom: 9px;
+  }
+
+  @media #{$desktop} {
+    left: 103px;
+    bottom: 17px;
+  }
+}
+
+.rates__detail--include::after {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 21px;
+  background: url("../img/yes.svg") no-repeat;
+
+  @media #{$mobile} {
+    right: 15px;
+    top: 18px;
+  }
+
+  @media #{$tablet} {
+    left: 61px;
+    bottom: 12px;
+  }
+
+  @media #{$desktop} {
+    left: 102px;
+    bottom: 20px;
   }
 }
 

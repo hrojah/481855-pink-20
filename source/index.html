@@ -89,7 +89,7 @@
           <h2 class="visually-hidden">Наше предложение</h2>
           <div class="offer__information">
             <h3 class="offer__item">Устали от серости мегаполиса?</h3>
-            <h3 class="offer__item offer__item--width">Нам есть что вам предложить!</h3>
+            <h3 class="offer__item offer__item--width">Нам есть, что вам предложить!</h3>
           </div>
           <div class="offer__advantages advantages">
             <div class="advantages__wrapper">
@@ -99,7 +99,7 @@
               </article>
               <article class="advantages__item advantages__item--world">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="advantages__carry"> усилить эффект</p>
               </article>
               <article class="advantages__item advantages__item--friends">
                 <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -110,8 +110,8 @@
           <div class="offer__study study">
             <div class="study__wrapper">
               <div class="study__item">
-                <h3 class="study__title">Эффект на 24 часа!</h3>
-                <p class="study__text">Британские ученые провели исследования и доказали,<br/> что положительный эффект от использования приложения длится целые сутки!</p>
+                <h3 class="study__title">Эффект<br class="study__carry--control"> на 24 часа!</h3>
+                <p class="study__text">Британские ученые провели исследования и доказали,<br class="study__carry"> что положительный эффект<br class="study__carry--control"> от использования приложения длится целые сутки!</p>
                 <a class="study__link">Узнать больше об исследовании</a>
               </div>
             </div>
@@ -127,9 +127,9 @@
             <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </article>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle slider__toggle--previous" type="button"></button>
+            <button class="slider__toggle slider__toggle--following" type="button"></button>
           </p>
         </div>
       </section>
@@ -140,33 +140,33 @@
           <tr>
             <th></th>
             <th class="rates__title">База<br><span class="rates__text">1,99 USD</span></th>
-            <th class="rates__title">Стандарт<br><span class="rates__text">3,99 USD</span></th>
+            <th class="rates__title rates__title--hit">Стандарт<br><span class="rates__text">3,99 USD</span></th>
             <th class="rates__title">Анлим<br><span class="rates__text">9,99 USD</span></th>
           </tr>
           <tr>
             <td class="rates__detail">Розовый фильтр</td>
-            <td class="rates__detail"><span class="rates__item">Розовый фильтр</span></td>
-            <td class="rates__detail"><span class="rates__item">Розовый фильтр</span></td>
-            <td class="rates__detail"><span class="rates__item">Розовый фильтр</span></td>
+            <td class="rates__detail rates__detail--include"><span class="rates__item">Розовый фильтр</span></td>
+            <td class="rates__detail rates__detail--include"><span class="rates__item">Розовый фильтр</span></td>
+            <td class="rates__detail rates__detail--include"><span class="rates__item">Розовый фильтр</span></td>
           </tr>
           <tr>
             <td class="rates__detail">Смайлики</td>
-            <td class="rates__detail"><span class="rates__item">Смайлики</span></td>
-            <td class="rates__detail"><span class="rates__item">Смайлики</span></td>
-            <td class="rates__detail"><span class="rates__item">Смайлики</span></td>
+            <td class="rates__detail rates__detail--not-include"><span class="rates__item">Смайлики</span></td>
+            <td class="rates__detail rates__detail--include"><span class="rates__item">Смайлики</span></td>
+            <td class="rates__detail rates__detail--include"><span class="rates__item">Смайлики</span></td>
           </tr>
           <tr>
             <td class="rates__detail">Комментарии</td>
-            <td class="rates__detail"><span class="rates__item">Комментарии</span></td>
-            <td class="rates__detail"><span class="rates__item">Комментарии</span></td>
-            <td class="rates__detail"><span class="rates__item">Комментарии</span></td>
+            <td class="rates__detail rates__detail--not-include"><span class="rates__item">Комментарии</span></td>
+            <td class="rates__detail rates__detail--not-include"><span class="rates__item">Комментарии</span></td>
+            <td class="rates__detail rates__detail--include"><span class="rates__item">Комментарии</span></td>
           </tr>
         </table>
         </div>
         <p class="rates__toggles slider__toggles">
-            <button class="slider__toggles" type="button">1</button>
-            <button class="slider__toggles slider__toggles--current" type="button">2</button>
-            <button class="slider__toggles" type="button">3</button>
+            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--current" type="button"></button>
+            <button class="slider__toggle" type="button"></button>
         </p>
       </section>
       <section class="contacts">
@@ -182,14 +182,14 @@
           </div>
           <div class="contacts__item contacts__item--grid">
             <p class="contacts__text">Приезжайте в гости:</p>
-            <a class="contacts__link" href="#">ул. Большая<br/>Конюшенная, 19/8</a>
+            <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </div>
         </div>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595176593861!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" title="Большая конюшенная, 19/8"></iframe>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper page-footer__wrapper--range">
+      <div class="page-footer__wrapper">
         <a class="logo-footer" href="#" aria-label="">
           <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g>

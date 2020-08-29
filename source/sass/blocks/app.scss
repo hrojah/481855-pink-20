@@ -14,7 +14,6 @@
   }
 
   @media #{$desktop} {
-    padding: 0 74px 0 0;
     margin-left: 36px;
     margin-top: 69px;
     min-height: 311px;
@@ -27,8 +26,12 @@
     padding-top: 39px;
   }
 
+  @media #{$tablet} {
+    min-width: 366px;
+  }
+
   @media #{$desktop} {
-    min-width: 318px;
+    min-width: 365px;
   }
 }
 
@@ -70,42 +73,6 @@
 .app .app__wrapper--control:last-child {
   @media #{$tablet} {
     padding-top: 44px;
-  }
-}
-
-.app .form__checkbox:checked + .form__label::before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 40px;
-  left: -2px;
-  bottom: -8px;
-  background-image: url("../img/checkbox-2.svg");
-
-  @media #{$tablet} {
-    left: -61px;
-  }
-
-  @media #{$desktop} {
-    left: -61px;
-  }
-}
-
-.app .form__checkbox + .form__label::before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 40px;
-  left: -2px;
-  bottom: -7px;
-  background-image: url("../img/checkbox-off-2.svg");
-
-  @media #{$tablet} {
-    left: -61px;
-  }
-
-  @media #{$desktop} {
-    left: -61px;
   }
 }
 

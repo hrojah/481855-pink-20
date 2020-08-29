@@ -1,6 +1,6 @@
 .page-main {
   @media #{$tablet} {
-    margin-top: -41px;
+    margin-top: -49px;
   }
 
   @media #{$desktop} {
@@ -13,14 +13,14 @@
   color: $white;
 
   @media #{$mobile} {
-    min-height: 257px;
+    min-height: 256px;
     margin-top: -19px;
     background: $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center top 19px;
   }
 
   @media #{$tablet} {
-    min-height: 481px;
-    background: $main-background url("../img/bg-back-tablet@1x.jpg") no-repeat center top 41px;
+    min-height: 489px;
+    background: $main-background url("../img/bg-back-tablet@1x.jpg") no-repeat center top 49px;
   }
 
   @media #{$desktop} {
@@ -31,19 +31,19 @@
   &--first {
     @media #{$mobile} {
       min-height: 733px;
-      background: url("../img/iphone-hand-mobile@1x.png") no-repeat center,
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat top 195px left 1px,
         $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
     }
 
     @media #{$tablet} {
       min-height: 737px;
       background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
-        url("../img/bg-back-tablet@1x.jpg") no-repeat center/cover;
+        url("../img/bg-back-tablet@1x.jpg") no-repeat top 7px center/cover;
     }
 
     @media #{$desktop} {
       min-height: 853px;
-      background: url("../img/iphone-hand-desktop@1x.png") no-repeat left 146px bottom,
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat right 4px bottom,
         url("../img/bg-back-desktop@1x.jpg") no-repeat center/cover;
     }
   }
@@ -54,7 +54,7 @@
   margin: 0 auto;
 
   @media #{$mobile} {
-    min-height: 733px;
+    min-height: 752px;
     padding: 0 20px;
     max-width: 320px;
     text-align: center;
@@ -112,7 +112,7 @@
     @media #{$tablet} {
       max-width: 480px;
       font-size: 50px;
-      padding-top: 217px;
+      padding-top: 225px;
       padding-left: 0;
       line-height: 68px;
       margin: 0 auto;
@@ -130,7 +130,7 @@
 
   &--control {
     @media #{$mobile} {
-      padding-top: 114px;
+      padding-top: 113px;
     }
 
     @media #{$desktop} {

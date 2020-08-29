@@ -19,6 +19,7 @@
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 130px;
+    background: url("../../img/quotes.png") no-repeat top 72px center;
   }
 }
 
@@ -34,7 +35,7 @@
   @media #{$desktop} {
     display: flex;
     flex-direction: column;
-    padding-top: 234px;
+    padding-top: 184px;
   }
 }
 
@@ -90,5 +91,12 @@
       order: 2;
       padding-top: 2px;
     }
+  }
+}
+
+.reviews__toggles {
+  @media #{$desktop} {
+    margin: 0;
+    position: relative;
   }
 }
