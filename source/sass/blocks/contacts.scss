@@ -46,7 +46,7 @@
     padding-top: 29px;
   }
 
-  &--control {
+  &:nth-child(3) {
     @media #{$mobile} {
       padding-top: 18px;
     }
@@ -60,7 +60,7 @@
     }
   }
 
-  &--grid {
+  &:last-child {
     @media #{$mobile} {
       padding-top: 22px;
       max-width: 240px;
@@ -81,7 +81,7 @@
     }
   }
 
-  &--range {
+  &:nth-child(2) {
     @media #{$tablet} {
       padding-right: 39px;
     }

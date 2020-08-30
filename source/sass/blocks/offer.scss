@@ -44,7 +44,7 @@
     max-width: 750px;
   }
 
-  &--width {
+  &:last-child {
     @media #{$mobile} {
       padding-top: 31px;
     }

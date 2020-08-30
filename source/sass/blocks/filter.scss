@@ -84,13 +84,25 @@
   }
 }
 
-.filter__photo {
+.filter__label {
   @media #{$tablet} {
     grid-row: 1/-1;
   }
 
   @media #{$desktop} {
     grid-row: 1/-1;
+  }
+}
+
+.filter__photo {
+  @media #{$tablet} {
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+  @media #{$desktop} {
+    min-width: 300px;
+    min-height: 400px;
   }
 }
 
