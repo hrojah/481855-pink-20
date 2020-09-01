@@ -31,7 +31,7 @@
     }
   }
 
-  &--previous {
+  &:nth-child(2) {
     @media #{$mobile} {
       transform: translate(-4px, 20px);
     }
@@ -48,7 +48,7 @@
     }
   }
 
-  &--following {
+  &:nth-child(3) {
     @media #{$mobile} {
       transform: translate(22px, 20px);
     }
@@ -74,7 +74,7 @@
 
 .rates__toggles .slider__toggle:nth-child(2) {
   @media #{$mobile} {
-    transform: translate(-6px, 27px);
+    transform: translate(-6px, 28px);
   }
 }
 
