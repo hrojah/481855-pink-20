@@ -85,23 +85,3 @@
     padding-top: 31px;
   }
 }
-
-.study__carry {
-  @media #{$mobile} {
-    display: none;
-  }
-
-  @media #{$tablet} {
-    display: none;
-  }
-
-  &--control {
-    @media #{$mobile} {
-      display: none;
-    }
-
-    @media #{$desktop} {
-      display: none;
-    }
-  }
-}

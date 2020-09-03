@@ -114,7 +114,7 @@
 .filter__buttons {
   @media #{$mobile} {
     display: grid;
-    padding-top: 38px;
+    padding-top: 39px;
     padding-bottom: 41px;
   }
 
@@ -134,4 +134,9 @@
     justify-content: space-between;
     padding-top: 137px;
   }
+}
+
+.filter__item {
+  border: none;
+  background: transparent;
 }

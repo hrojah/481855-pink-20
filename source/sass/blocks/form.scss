@@ -223,19 +223,18 @@ fieldset {
 
   &--control {
     @media #{$mobile} {
-      padding-top: 13px;
-      padding-bottom: 154px;
+      padding: 13px 20px 124px;
     }
 
     @media #{$tablet} {
       width: 100%;
       margin-left: 0;
-      padding: 17px 10px 148px 20px;
+      padding: 17px 10px 124px 20px;
     }
 
     @media #{$desktop} {
       width: 100%;
-      padding-bottom: 83px;
+      padding-bottom: 59px;
     }
   }
 }
@@ -266,7 +265,7 @@ fieldset {
     align-items: center;
     max-width: 320px;
     margin: 0 auto;
-    padding-top: 47px;
+    padding-top: 42px;
   }
 
   @media #{$tablet} {
@@ -280,7 +279,7 @@ fieldset {
     grid-row: 5/6;
     grid-column: 1/-1;
     justify-content: space-between;
-    padding-top: 64px;
+    padding-top: 65px;
   }
 }
 
@@ -299,6 +298,10 @@ fieldset {
   @media #{$mobile} {
     max-width: 280px;
     min-height: 63px;
+  }
+
+  @media #{$desktop} {
+    border-radius: 3px;
   }
 }
 
@@ -325,26 +328,27 @@ fieldset {
   @media #{$desktop} {
     display: block;
     width: 100%;
-    padding-left: 23px;
+    padding-left: 47px;
     padding-top: 34px;
   }
 
   &--active {
     @media #{$mobile} {
       display: block;
-      width: 351%;
-      padding: 62px 0 34px 7px;
+      width: 427%;
+      padding: 34px 0;
     }
 
     @media #{$desktop} {
       padding-top: 19px;
+      padding-left: 35px;
     }
   }
 
   &--control {
     @media #{$desktop} {
       padding-top: 37px;
-      padding-left: 24px;
+      padding-left: 31px;
     }
   }
 }
@@ -399,7 +403,7 @@ fieldset {
   }
 
   @media #{$desktop} {
-    right: 209px;
+    right: 205px;
     bottom: 29px;
   }
 
@@ -410,7 +414,7 @@ fieldset {
     }
 
     @media #{$desktop} {
-      right: 31px;
+      right: 27px;
       bottom: 27px;
     }
   }
@@ -422,7 +426,7 @@ fieldset {
     }
 
     @media #{$desktop} {
-      right: 118px;
+      right: 114px;
       bottom: 27px;
     }
   }
