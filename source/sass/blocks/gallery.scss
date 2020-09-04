@@ -84,6 +84,8 @@
   }
 
   &:first-child {
+    position: relative;
+
     @media #{$tablet} {
       min-width: 620px;
       grid-column: 1/-1;
@@ -96,37 +98,51 @@
       grid-column: 1/-1;
       margin-bottom: 30px;
     }
+  }
 
-    &:first-child::after {
-      content: "панорама дня";
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 24px;
-      position: absolute;
-      text-transform: uppercase;
-      color: $white;
-      padding: 6px 20px;
-      right: 20px;
-      bottom: 366px;
-      background-color: $contacts-link-color;
+  &:first-child::after {
+    content: "панорама дня";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    position: absolute;
+    text-transform: uppercase;
+    color: $white;
+    padding: 6px 20px 6px 19px;
+    right: 0;
+    bottom: 293px;
+    background-color: $contacts-link-color;
 
-      @media #{$tablet} {
-        right: 20px;
-        bottom: 62px;
-        padding: 6px 18px;
-        width: 104px;
-      }
-
-      @media #{$desktop} {
-        right: 130px;
-        bottom: 99px;
-        padding: 6px 20px 6px 19px;
-      }
+    @media #{$tablet} {
+      right: 0;
+      bottom: 537px;
+      width: 101px;
     }
+
+    @media #{$desktop} {
+      right: 0;
+      bottom: 512px;
+    }
+  }
+
+  &:nth-child(3) .gallery__item {
+    height: 121px;
   }
 
   &:nth-child(4) .gallery__item {
     height: 144px;
+  }
+
+  &:nth-child(5) .gallery__item {
+    height: 121px;
+  }
+
+  &:nth-child(6) .gallery__item {
+    height: 121px;
+  }
+
+  &:last-child .gallery__item {
+    height: 121px;
   }
 }
 
@@ -137,6 +153,8 @@
 
 .gallery__item {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 
   @media #{$mobile} {
     padding-left: 17px;
@@ -153,12 +171,6 @@
     padding-left: 27px;
     padding-top: 25px;
     padding-bottom: 21px;
-  }
-
-  &:nth-child(4) {
-    @media #{$mobile} {
-      height: 121px;
-    }
   }
 
   &:first-child {
@@ -238,14 +250,14 @@
   @media #{$tablet} {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 14px;
   }
 
   @media #{$desktop} {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 15px;
   }
 
@@ -255,6 +267,7 @@
       grid-column: 2/3;
       grid-row: 1/2;
       padding-top: 1px;
+      justify-content: flex-end;
     }
 
     @media #{$desktop} {
@@ -276,10 +289,26 @@
   }
 }
 
+.gallery__likes--top .gallery__number {
+  @media #{$tablet} {
+    padding-top: 3px;
+    padding-right: 16px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 2px;
+    padding-right: 47px;
+  }
+}
+
 .gallery__number {
   font-size: 12px;
   color: $contacts-link-color;
   text-transform: uppercase;
+
+  @media #{$mobile} {
+    padding-left: 15px;
+  }
 }
 
 .gallery__carry {

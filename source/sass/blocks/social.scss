@@ -1,9 +1,36 @@
-.social__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
+.social {
+  min-width: 178px;
+
+  @media #{$mobile} {
+    padding-top: 32px;
+  }
+
+  @media #{$tablet} {
+    margin-left: -21px;
+    min-width: 183px;
+  }
+
+  @media #{$desktop} {
+    min-width: 177px;
+  }
 }
 
-.social__item {
-  margin: 0 14px;
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 5px;
+
+  @media #{$mobile} {
+    margin: 0;
+  }
+
+  @media #{$tablet} {
+    padding-top: 5px;
+  }
+
+  @media #{$desktop} {
+    padding-top: 5px;
+  }
 }

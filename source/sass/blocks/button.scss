@@ -4,15 +4,15 @@
   border-radius: 29px;
 
   @media #{$mobile} {
-    padding: 13px 35px;
+    padding: 11px 36px 14px 35px;
   }
 
   @media #{$tablet} {
-    padding: 12px 45px;
+    padding: 12px 45px 13px 46px;
   }
 
   @media #{$desktop} {
-    padding: 11px 29px;
+    padding: 12px 29px 10px;
   }
 
   &--upload {

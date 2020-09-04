@@ -3,22 +3,48 @@
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  display: flex;
 
   @media #{$desktop} {
     text-transform: none;
     font-weight: 400;
+    display: flex;
+    padding-top: 50px;
   }
 }
 
 .nav__toggle {
   margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 24px;
+  background-image: url("../img/open menu btn.svg");
 
   @media #{$mobile} {
-    transform: translateY(-34px);
+
+    transform: translate(79px, 5px);
+  }
+
+  @media #{$tablet} {
+    transform: translate(1px, 42px);
   }
 
   @media #{$desktop} {
     display: none;
+  }
+
+  &--close {
+    background-image: url("../img/close menu btn.svg");
+
+    @media #{$mobile} {
+      width: 25px;
+      transform: translate(106px, 7px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(28px, 43px);
+    }
   }
 }

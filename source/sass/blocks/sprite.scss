@@ -1,0 +1,113 @@
+.page-sprite {
+  display: none;
+}
+
+.pink-logo {
+  fill: $white;
+}
+
+.pink-logo-star {
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.pink-logo-glasses-tablet {
+  fill: $white;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.pink-logo-glasses {
+  fill: white;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.academy-logo {
+  width: 27px;
+  height: 34px;
+  fill: $contacts-link-color;
+
+  @media #{$tablet} {
+    height: 37px;
+  }
+}
+
+.twitter {
+  fill: $contacts-link-color;
+}
+
+.facebook {
+  fill: $contacts-link-color;
+}
+
+.youtube {
+  fill: $contacts-link-color;
+}
+
+.filter__crop {
+  @media #{$mobile} {
+    transform: translate(10px, 1px);
+  }
+
+  @media #{$desktop} {
+    transform: translate(-7px, -7px);
+  }
+}
+
+.filter__fill {
+  @media #{$mobile} {
+    transform: translate(-6px, 2px);
+  }
+
+  @media #{$desktop} {
+    transform: translate(-7px, 3px);
+  }
+}
+
+.filter__contrast {
+  @media #{$mobile} {
+    transform: translate(-22px, 7px);
+  }
+
+  @media #{$desktop} {
+    transform: translate(-1px, 2px);
+  }
+}
+
+.gallery__heart {
+  @media #{$tablet} {
+    transform: translate(-30px, -2px);
+  }
+
+  @media #{$desktop} {
+    transform: translate(-31px, -2px);
+  }
+
+  &--top {
+    @media #{$tablet} {
+      transform: translateY(1px);
+    }
+
+    @media #{$desktop} {
+      transform: translateX(-31px);
+    }
+  }
+}

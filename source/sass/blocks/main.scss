@@ -4,7 +4,7 @@
 
   @media #{$mobile} {
     min-height: 256px;
-    margin-top: -19px;
+    margin-top: 174px;
     background: $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat center top 19px;
 
     @media (min-resolution: 2dppx) {
@@ -48,7 +48,7 @@
     }
 
     @media #{$tablet} {
-      min-height: 737px;
+      min-height: 738px;
       background: url("../img/iphone-hand-tablet@1x.png") no-repeat center bottom,
         $main-background url("../img/bg-back-tablet@1x.jpg") no-repeat top 7px center/cover;
 
@@ -61,7 +61,7 @@
     }
 
     @media #{$desktop} {
-      min-height: 854px;
+      min-height: 853px;
       background: url("../img/iphone-hand-desktop@1x.png") no-repeat right 4px bottom,
         $main-background url("../img/bg-back-desktop@1x.jpg") no-repeat center/cover;
 
@@ -71,6 +71,12 @@
         background-size: 1049px auto,
           2556px auto;
       }
+    }
+  }
+
+  &--menu {
+    @media #{$mobile} {
+      margin-top: -19px;
     }
   }
 }
@@ -113,7 +119,7 @@
 
   @media #{$tablet} {
     max-width: 200px;
-    padding-top: 212px;
+    padding-top: 213px;
     padding-left: 50px;
     font-size: 40px;
     line-height: 120%;
