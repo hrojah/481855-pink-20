@@ -155,17 +155,17 @@ fieldset {
     height: 61px;
     right: -351px;
     bottom: 37px;
-    background: $advantages-background url("../img/phone icon.svg") no-repeat center;
+    background: $advantages-background url("../img/phone-icon.svg") no-repeat center;
   }
 
   @media #{$desktop} {
     content: "";
     position: absolute;
     width: 58px;
-    height: 61px;
+    height: 59px;
     right: -16px;
-    bottom: 37px;
-    background: $advantages-background url("../img/phone icon.svg") no-repeat center;
+    bottom: 38px;
+    background: $advantages-background url("../img/phone-icon.svg") no-repeat center;
   }
 }
 
@@ -177,15 +177,16 @@ fieldset {
     height: 61px;
     right: -381px;
     bottom: 37px;
-    background: $advantages-background url("../img/mail icon.svg") no-repeat center;
+    background: $advantages-background url("../img/mail-icon.svg") no-repeat center;
   }
 
   @media #{$desktop} {
     content: "";
     position: absolute;
     width: 58px;
-    height: 61px;
-    background: $advantages-background url("../img/mail icon.svg") no-repeat center;
+    height: 59px;
+    bottom: 38px;
+    background: $advantages-background url("../img/mail-icon.svg") no-repeat center;
   }
 }
 
@@ -234,8 +235,18 @@ fieldset {
 
     @media #{$desktop} {
       width: 100%;
-      padding-bottom: 59px;
+      min-height: 128px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $text-color;
+  }
+
+  &:active {
+    border-color: $contacts-link-color;
   }
 }
 
@@ -245,7 +256,7 @@ fieldset {
   width: 39px;
   height: 39px;
   left: -2px;
-  bottom: -8px;
+  bottom: -7px;
   background-image: url("../img/checkbox.svg");
 
   @media #{$tablet} {
@@ -254,7 +265,45 @@ fieldset {
 
   @media #{$desktop} {
     left: -59px;
+    bottom: -8px;
   }
+}
+
+.form__checkbox:checked:hover + .form__label::before,
+.form__checkbox:checked:focus + .form__label::before {
+  background-image: url("../img/checkbox-checked-hover.svg");
+}
+
+.form__checkbox:checked:active + .form__label::before {
+  background-image: url("../img/checkbox-checked-active.svg");
+}
+
+.form__checkbox + .form__label::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  left: -2px;
+  bottom: -7px;
+  background-image: url("../img/checkbox-off.svg");
+
+  @media #{$tablet} {
+    left: -59px;
+  }
+
+  @media #{$desktop} {
+    left: -59px;
+    bottom: -8px;
+  }
+}
+
+.form__checkbox:hover + .form__label::before,
+.form__checkbox:focus + .form__label::before {
+  background-image: url("../img/checkbox-hover.svg");
+}
+
+.form__checkbox:active + .form__label::before {
+  background-image: url("../img/checkbox-active.svg");
 }
 
 .form__item {
@@ -303,12 +352,24 @@ fieldset {
   @media #{$desktop} {
     border-radius: 3px;
   }
-}
 
-.form__crop {
-  height: 2px;
-  color: $text-color;
-  margin: 0;
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $submit-button-hover;
+    border-color: $submit-button-hover;
+  }
+
+  &:active {
+    background-color: $submit-button-hover;
+    border-color: $submit-button-hover;
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $border-color;
+    border-color: $border-color;
+  }
 }
 
 .form__range {
@@ -322,7 +383,7 @@ fieldset {
     display: block;
     width: 100%;
     padding-top: 19px;
-    padding-left: 20px;
+    padding-left: 54px;
   }
 
   @media #{$desktop} {
@@ -335,8 +396,9 @@ fieldset {
   &--active {
     @media #{$mobile} {
       display: block;
-      width: 427%;
+      width: 428%;
       padding: 34px 0;
+      margin-left: -1px;
     }
 
     @media #{$desktop} {
@@ -372,14 +434,14 @@ fieldset {
   &--control {
     @media #{$tablet} {
       margin-top: 18px;
-      margin-left: 1px;
+      margin-left: -2px;
     }
   }
 
   &--contrast {
     @media #{$tablet} {
       margin-top: 15px;
-      margin-left: -4px;
+      margin-left: 6px;
     }
   }
 }
@@ -410,7 +472,7 @@ fieldset {
   &--fill {
     @media #{$tablet} {
       bottom: 26px;
-      left: 46px;
+      left: 77px;
     }
 
     @media #{$desktop} {
@@ -430,15 +492,19 @@ fieldset {
       bottom: 27px;
     }
   }
+
+  &:active {
+    background-color: $contacts-link-color;
+  }
 }
 
 .form__radio:checked + .form__label::before {
   content: "";
   position: absolute;
-  width: 42px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
   left: -2px;
-  bottom: -8px;
+  bottom: -9px;
   background-image: url("../img/checkbox-2.svg");
 
   @media #{$tablet} {
@@ -450,11 +516,20 @@ fieldset {
   }
 }
 
+.form__radio:checked:hover + .form__label::before,
+.form__radio:checked:focus + .form__label::before {
+  background-image: url("../img/radio-checked-hover.svg");
+}
+
+.form__radio:checked:active + .form__label::before {
+  background-image: url("../img/radio-checked-active.svg");
+}
+
 .form__radio + .form__label::before {
   content: "";
   position: absolute;
-  width: 42px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
   left: -2px;
   bottom: -8px;
   background-image: url("../img/checkbox-off-2.svg");
@@ -465,5 +540,15 @@ fieldset {
 
   @media #{$desktop} {
     left: -61px;
+    bottom: -9px;
   }
+}
+
+.form__radio:hover + .form__label::before,
+.form__radio:focus + .form__label::before {
+  background-image: url("../img/radio-hover.svg");
+}
+
+.form__radio:active + .form__label::before {
+  background-image: url("../img/radio-active.svg");
 }

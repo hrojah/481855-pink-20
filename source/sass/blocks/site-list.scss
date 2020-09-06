@@ -50,7 +50,7 @@
 
   &:last-child {
     @media #{$desktop} {
-      padding-left: 80px;
+      padding-left: 79px;
       padding-top: 1px;
     }
   }
@@ -64,5 +64,16 @@
       border-bottom: 2px solid $white;
       padding-bottom: 8px;
     }
+  }
+
+  &:hover,
+  &:focus {
+    color: $contacts-link-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $white;
+    opacity: 0.3;
   }
 }

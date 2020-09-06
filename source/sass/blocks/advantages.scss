@@ -3,15 +3,15 @@
 
   @media #{$mobile} {
     padding-top: 111px;
-    background: url("../img/grey background.png") no-repeat top -10px center/cover;
+    background: url("../img/grey-background.png") no-repeat top -10px center/cover;
   }
 
   @media #{$tablet} {
-    background: url("../img/grey background.png") no-repeat top -62px center/cover;
+    background: url("../img/grey-background.png") no-repeat top -62px center/cover;
   }
 
   @media #{$desktop} {
-    background: url("../img/grey background-desktop.png") no-repeat top 50px center/cover;
+    background: url("../img/grey-background-desktop.png") no-repeat top 50px center/cover;
   }
 }
 

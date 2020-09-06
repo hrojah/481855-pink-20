@@ -25,6 +25,8 @@
 }
 
 .review__legend {
+  margin: 0 auto;
+
   @media #{$mobile} {
     padding-top: 35px;
     padding-bottom: 14px;

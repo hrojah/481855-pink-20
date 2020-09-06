@@ -142,4 +142,14 @@
   @media #{$mobile} {
     line-height: 33px;
   }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $text-color;
+  }
+
+  &:active {
+    color: rgba($text-color, 0.3);
+  }
 }

@@ -22,6 +22,7 @@
 
 .details__legend {
   line-height: 18px;
+  margin: 0 auto;
 
   @media #{$mobile} {
     padding-top: 39px;
@@ -143,23 +144,5 @@
 .details__item > .form__label {
   @media #{$mobile} {
     padding-left: 57px;
-  }
-}
-
-.details__item > .form__label::before {
-  content: "";
-  position: absolute;
-  width: 39px;
-  height: 39px;
-  left: -2px;
-  bottom: -8px;
-  background-image: url("../img/checkbox-off.svg");
-
-  @media #{$tablet} {
-    left: -59px;
-  }
-
-  @media #{$desktop} {
-    left: -59px;
   }
 }

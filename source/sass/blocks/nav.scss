@@ -20,31 +20,30 @@
   background-repeat: no-repeat;
   width: 51px;
   height: 24px;
-  background-image: url("../img/open menu btn.svg");
 
   @media #{$mobile} {
-
-    transform: translate(79px, 5px);
+    transform: translateY(-2px);
   }
 
   @media #{$tablet} {
-    transform: translate(1px, 42px);
+    transform: translateY(-1px);
   }
 
   @media #{$desktop} {
     display: none;
   }
 
-  &--close {
-    background-image: url("../img/close menu btn.svg");
+  &:focus {
+    outline: none;
+  }
 
-    @media #{$mobile} {
-      width: 25px;
-      transform: translate(106px, 7px);
-    }
+  &:hover svg,
+  &:focus svg {
+    outline: none;
+    fill: $contacts-link-color;
+  }
 
-    @media #{$tablet} {
-      transform: translate(28px, 43px);
-    }
+  &:active svg {
+    fill: rgba($contacts-link-color, 0.3);
   }
 }

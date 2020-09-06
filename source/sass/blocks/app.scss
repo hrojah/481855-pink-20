@@ -21,6 +21,8 @@
 }
 
 .app__legend {
+  margin: 0 auto;
+
   @media #{$mobile} {
     line-height: 18px;
     padding-top: 39px;
