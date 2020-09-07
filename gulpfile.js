@@ -53,7 +53,13 @@ const images = () => {
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
-      imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+          {cleanupIDs: false},
+          {removeUselessDefs: false},
+          {removeViewBox: true},
+        ]
+      })
     ]))
     .pipe(gulp.dest("build/img"))
 }
@@ -61,7 +67,7 @@ const images = () => {
 //Webp
 
 const imageswebp = () => {
-  return gulp.src("source/img/*.{jpg}")
+  return gulp.src("source/img/*.jpg")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"))
 }
