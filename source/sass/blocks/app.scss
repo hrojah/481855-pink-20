@@ -1,8 +1,10 @@
 .app {
   box-sizing: border-box;
   margin: 0;
+  border: 2px solid $border-color;
 
   @media #{$mobile} {
+    border: none;
     padding: 0 22px;
     max-width: 320px;
     min-height: 340px;

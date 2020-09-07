@@ -10,6 +10,31 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require('del');
 const rename = require("gulp-rename");
+const uglify = require("gulp-uglify");
+const htmlmin = require("gulp-htmlmin")
+
+//Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace:true}))
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
+//Js
+
+const js = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: ".min"
+    }))
+    .pipe(gulp.dest("build/js"));
+}
+
+exports.js = js;
 
 // Styles
 
@@ -77,8 +102,9 @@ exports.imageswebp = imageswebp;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/js/*.js").on("change", sync.reload);
 }
 
 exports.default = gulp.series(
@@ -90,8 +116,6 @@ exports.default = gulp.series(
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/js/**",
-    "source/*.html"
   ], {
     base: "source"
   })
@@ -113,7 +137,9 @@ const build = gulp.series(
   copy,
   styles,
   images,
-  imageswebp
+  imageswebp,
+  html,
+  js
 );
 
 exports.build = build;

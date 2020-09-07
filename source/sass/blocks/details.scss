@@ -1,8 +1,10 @@
 .details {
   margin: 0;
   box-sizing: border-box;
+  border: 2px solid $border-color;
 
   @media #{$mobile} {
+    border: none;
     padding: 0 22px 30px 22px;
     max-width: 320px;
     margin: 0 auto;

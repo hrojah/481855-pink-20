@@ -1,6 +1,7 @@
 .map {
   width: 100%;
   vertical-align: bottom;
+  height: 100%;
 
   @media #{$mobile} {
     min-height: 234px;
@@ -12,6 +13,51 @@
 
   @media #{$desktop} {
     min-height: 502px;
-    padding-top: 19px;
+  }
+}
+
+.map__wrapper {
+  position: relative;
+
+  @media #{$mobile} {
+    min-height: 234px;
+    background: $border-color url("../img/map-mobile.png") no-repeat center/cover;
+  }
+
+  @media #{$tablet} {
+    min-height: 396px;
+    background: $border-color url("../img/map-tablet.png") no-repeat center/cover;
+  }
+
+  @media #{$desktop} {
+    min-height: 502px;
+    background: $border-color url("../img/map-desktop.png") no-repeat center/cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/triangle-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -56px;
+    width: 320px;
+    height: 123px;
+    z-index: 1;
+
+    @media #{$tablet} {
+      width: 660px;
+      height: 123px;
+      top: -33px;
+      z-index: 1;
+      background-image: url("../img/triangle-tablet.svg");
+    }
+
+    @media #{$desktop} {
+      width: 1200px;
+      height: 123px;
+      background-image: url("../img/triangle-desktop.svg");
+      top: -20px;
+    }
   }
 }

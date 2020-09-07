@@ -239,13 +239,13 @@ fieldset {
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     outline: none;
     border-color: $text-color;
   }
 
-  &:active {
+  &:focus {
+    outline: none;
     border-color: $contacts-link-color;
   }
 }
