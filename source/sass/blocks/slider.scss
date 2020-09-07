@@ -127,8 +127,10 @@
 }
 
 .slider__toggle--previous:active::after {
-  border-top: 2px solid rgba($text-color, 0.1);
-  border-left: 2px solid rgba($text-color, 0.1);
+  @media #{$desktop} {
+    border-top: 2px solid rgba($text-color, 0.1);
+    border-left: 2px solid rgba($text-color, 0.1);
+  }
 }
 
 .slider__toggle--following::before {
@@ -154,6 +156,8 @@
 }
 
 .slider__toggle--following:active::before {
-  border-top: 2px solid rgba($text-color, 0.1);
-  border-left: 2px solid rgba($text-color, 0.1);
+  @media #{$desktop} {
+    border-top: 2px solid rgba($text-color, 0.1);
+    border-left: 2px solid rgba($text-color, 0.1);
+  }
 }
