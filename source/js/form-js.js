@@ -1,6 +1,6 @@
 var form = document.querySelector(".competition__form")
 var surname = document.querySelector(".surname")
-var first_name = document.querySelector(".first-name")
+var firstName = document.querySelector(".first-name")
 var email = document.querySelector(".email")
 var success = document.querySelector(".pop-up--success")
 var failure = document.querySelector(".pop-up--failure")
@@ -9,16 +9,14 @@ var close = document.querySelector(".pop-up__button--close")
 
 
 surname.removeAttribute("required");
-first_name.removeAttribute("required");
+firstName.removeAttribute("required");
 email.removeAttribute("required");
-success.classList.add("pop-up--hide");
-failure.classList.add("pop-up--hide");
 
 
 form.addEventListener("submit", function (evt) {
 
   evt.preventDefault();
-  if (!surname.value || !name.value || !email.value) {
+  if (!surname.value || !firstName.value || !email.value) {
     failure.classList.add("pop-up--show");
   } else {
     success.classList.add("pop-up--show");
@@ -35,7 +33,7 @@ close.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (failure.classList.contains("pop-up--show") || succes.classList.contains("pop-up--show")) {
+    if (failure.classList.contains("pop-up--show") || success.classList.contains("pop-up--show")) {
       evt.preventDefault();
       failure.classList.remove("pop-up--show");
       success.classList.remove("pop-up--show");

@@ -34,3 +34,23 @@
     padding-top: 5px;
   }
 }
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:active svg {
+  fill-opacity: 0.3;
+  border: 3px solid rgba($text-color, 0.1);
+}
+
+.social__link svg {
+  box-sizing: border-box;
+  border: 3px solid rgba($text-color, 0.1);
+  border-radius: 50%;
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
+  border-color: $text-color;
+}

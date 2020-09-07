@@ -1,35 +1,17 @@
-.page-sprite {
-  display: none;
-}
-
-.pink-logo {
+.sprite-logo {
   fill: $white;
-}
-
-.pink-logo-star {
-  @media #{$mobile} {
-    display: none;
-  }
 
   @media #{$tablet} {
     display: none;
   }
+
+  @media #{$desktop} {
+    display: none;
+  }
 }
 
-.pink-logo-glasses-tablet {
+.sprite-logo-tablet {
   fill: $white;
-
-  @media #{$mobile} {
-    display: none;
-  }
-
-  @media #{$tablet} {
-    display: none;
-  }
-}
-
-.pink-logo-glasses {
-  fill: white;
 
   @media #{$mobile} {
     display: none;
@@ -40,7 +22,39 @@
   }
 }
 
-.academy-logo {
+.sprite-logo-desktop {
+  fill: $white;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.sprite-logo-footer {
+  fill: $text-color;
+
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.sprite-logo-footer-desktop {
+  fill: $text-color;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+.sprite__academy-logo {
   width: 27px;
   height: 34px;
   fill: $contacts-link-color;
@@ -50,49 +64,7 @@
   }
 }
 
-.twitter {
-  fill: $contacts-link-color;
-}
-
-.facebook {
-  fill: $contacts-link-color;
-}
-
-.youtube {
-  fill: $contacts-link-color;
-}
-
-.filter__crop {
-  @media #{$mobile} {
-    transform: translate(10px, 1px);
-  }
-
-  @media #{$desktop} {
-    transform: translate(-7px, -7px);
-  }
-}
-
-.filter__fill {
-  @media #{$mobile} {
-    transform: translate(-6px, 2px);
-  }
-
-  @media #{$desktop} {
-    transform: translate(-7px, 3px);
-  }
-}
-
-.filter__contrast {
-  @media #{$mobile} {
-    transform: translate(-22px, 7px);
-  }
-
-  @media #{$desktop} {
-    transform: translate(-1px, 2px);
-  }
-}
-
-.gallery__heart {
+.sprite-heart {
   @media #{$tablet} {
     transform: translate(-30px, -2px);
   }
@@ -110,4 +82,22 @@
       transform: translateX(-31px);
     }
   }
+}
+
+.sprite-open {
+  fill: $white;
+}
+
+.sprite-open--hidden {
+  display: none;
+}
+
+.sprite-close {
+  fill: $white;
+  display: none;
+}
+
+.sprite-close--active {
+  display: block;
+  transform: translate(28px, 2px);
 }

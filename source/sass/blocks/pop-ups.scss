@@ -5,39 +5,10 @@
   background: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
-  position: absolute;
-
-  &--success {
-    @media #{$mobile} {
-      top: 1660px;
-    }
-
-    @media #{$tablet} {
-      top: 1383px;
-    }
-
-    @media #{$desktop} {
-      top: 1275px;
-    }
-  }
-
-  &--failure {
-    @media #{$mobile} {
-      top: 1166px;
-    }
-
-    @media #{$tablet} {
-      top: 908px;
-    }
-
-    @media #{$desktop} {
-      top: 817px;
-    }
-  }
-
-  &--hide {
-    display: none;
-  }
+  position: fixed;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  display: none;
 
   &--show {
     display: block;
@@ -45,20 +16,19 @@
 
   @media #{$mobile} {
     width: 320px;
+    transform: translateY(62%);
   }
 
   @media #{$tablet} {
     width: 460px;
     min-height: 363px;
-    transform: translateX(50%);
-    right: 50%;
+    transform: translate(22%, 58%);
   }
 
   @media #{$desktop} {
     width: 780px;
     min-height: 377px;
-    transform: translateX(50%);
-    right: 50%;
+    transform: translate(27%, 50%);
   }
 }
 

@@ -218,6 +218,18 @@
       padding-top: 75px;
     }
   }
+
+  &--download:hover,
+  &--download:focus {
+    color: $contacts-link-color;
+    background-color: $white;
+    outline: none;
+  }
+
+  &--download:active {
+    color: rgba($contacts-link-color, 0.3);
+    background-color: $white;
+  }
 }
 
 .main__link--store:nth-child(3) {

@@ -125,7 +125,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 23px;
-    padding-top: 62px;
+    padding-top: 63px;
     box-sizing: border-box;
   }
 
@@ -139,4 +139,98 @@
 .filter__item {
   border: none;
   background: transparent;
+
+  &--crop {
+    @media #{$mobile} {
+      transform: translate(10px, 1px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(31px, -7px);
+    }
+
+    @media #{$desktop} {
+      transform: translate(-7px, -7px);
+    }
+  }
+
+  &--crop svg {
+    @media #{$tablet} {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &--fill {
+    @media #{$mobile} {
+      transform: translate(-6px, 2px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(30px, 4px);
+    }
+
+    @media #{$desktop} {
+      transform: translate(-7px, 3px);
+    }
+  }
+
+  &--fill svg {
+    @media #{$tablet} {
+      width: 24px;
+      height: 22px;
+    }
+  }
+
+  &--contrast {
+    @media #{$mobile} {
+      transform: translate(-22px, 7px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(34px, 2px);
+    }
+
+    @media #{$desktop} {
+      transform: translate(-1px, 2px);
+    }
+  }
+
+  &--contrast svg {
+    @media #{$tablet} {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: rgba($text-color, 0.5);
+  }
+}
+
+.filter__icon {
+  @media #{$mobile} {
+    fill: rgba($text-color, 0.3);
+  }
+
+  @media #{$tablet} {
+    fill: $contacts-link-color;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media #{$desktop} {
+    fill: $contacts-link-color;
+  }
+
+  &--current {
+    fill: $contacts-link-color;
+    opacity: 1;
+  }
 }
