@@ -5,19 +5,30 @@
   background: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 5px;
+  position: fixed;
+  transition: 0.5s;
+  left: 50%;
+  display: none;
+
+  &--show {
+    display: block;
+  }
 
   @media #{$mobile} {
-    max-width: 320px;
+    width: 320px;
+    transform: translate(-50%, 62%);
   }
 
   @media #{$tablet} {
     width: 460px;
     min-height: 363px;
+    transform: translate(-50%, 58%);
   }
 
   @media #{$desktop} {
     width: 780px;
     min-height: 377px;
+    transform: translate(-50%, 50%);
   }
 }
 
@@ -31,44 +42,141 @@
 
   @media #{$tablet} {
     font-size: 30px;
+    max-width: 230px;
+    margin: 0 auto 22px;
   }
 
   @media #{$desktop} {
     font-size: 30px;
+    margin-bottom: 17px;
   }
 }
 
 .pop-up__text {
+  line-height: 24px;
+
+  @media #{$mobile} {
+    margin: 22px auto 0;
+    max-width: 280px;
+  }
+
   @media #{$tablet} {
     font-size: 18px;
+    max-width: 310px;
+    margin: 0 auto;
   }
 
   @media #{$desktop} {
     font-size: 18px;
+    max-width: 380px;
+    margin: 0 auto;
   }
 }
 
 .pop-up__button {
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: $white;
   background-color: $submit-button-color;
   border: 2px solid $submit-button-color;
-  border-radius: 1px;
+  border-radius: 3px;
+  height: 63px;
+  text-transform: uppercase;
+  width: 300px;
+
+  @media #{$mobile} {
+    width: 280px;
+  }
+}
+
+.pop-up--success .pop-up__wrapper {
+  &:first-child {
+    @media #{$mobile} {
+      min-height: 182px;
+    }
+
+    @media #{$tablet} {
+      min-height: 228px;
+      padding-top: 40px;
+    }
+
+    @media #{$desktop} {
+      min-height: 204px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.pop-up--failure .pop-up__wrapper {
+  &:first-child {
+    @media #{$mobile} {
+      min-height: 156px;
+      padding-top: 20px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 41px;
+    }
+
+    @media #{$desktop} {
+      min-height: 204px;
+    }
+  }
+
+  &:last-child {
+    @media #{$mobile} {
+      min-height: 113px;
+    }
+
+    @media #{$tablet} {
+      padding-top: 33px;
+    }
+
+    @media #{$desktop} {
+      min-height: 113px;
+      padding-top: 50px;
+      background-color: $advantages-background;
+    }
+  }
+
+  @media #{$desktop} {
+    padding-top: 10px;
+  }
+}
+
+.pop-up__wrapper:first-child {
+  @media #{$tablet} {
+    line-height: 40px;
+  }
 }
 
 .pop-up__wrapper--color {
   background-color: $advantages-background;
 
   @media #{$mobile} {
+    padding-top: 50px;
+    min-height: 113px;
     border-radius: 0 0 1px 1px;
   }
 
   @media #{$tablet} {
     border-radius: 0 0 5px 5px;
+    padding-top: 50px;
+    min-height: 113px;
+
+    & .pop-up__button {
+      width: 299px;
+    }
   }
 
   @media #{$desktop} {
     border-radius: 0 0 5px 5px;
+    min-height: 113px;
+    padding-top: 50px;
+
+    & .pop-up__button {
+      width: 460px;
+    }
   }
 }

@@ -3,22 +3,11 @@
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  display: flex;
 
   @media #{$desktop} {
     text-transform: none;
     font-weight: 400;
-  }
-}
-
-.nav__toggle {
-  margin-left: auto;
-
-  @media #{$mobile} {
-    transform: translateY(-34px);
-  }
-
-  @media #{$desktop} {
-    display: none;
+    display: flex;
+    padding-top: 50px;
   }
 }

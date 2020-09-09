@@ -3,15 +3,11 @@
   align-items: center;
 
   @media #{$mobile} {
-    padding-top: 65px;
-  }
-
-  @media #{$tablet} {
-    padding-top: 2px;
+    padding-top: 24px;
   }
 
   @media #{$desktop} {
-    padding-top: 6px;
+    padding-top: 5px;
   }
 }
 
@@ -38,5 +34,29 @@
 
   @media #{$tablet} {
     margin-top: 9px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    outline: none;
+    fill: $text-color;
+  }
+
+  &:active svg {
+    fill: rgba($text-color, 0.3);
+  }
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  fill: $contacts-link-color;
+
+  @media #{$tablet} {
+    height: 37px;
   }
 }

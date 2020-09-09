@@ -53,6 +53,7 @@
   font-size: 30px;
   font-weight: 700;
   margin: 0;
+  color: $black;
 
   @media #{$tablet} {
     max-width: 170px;
@@ -83,25 +84,5 @@
   @media #{$desktop} {
     font-size: 18px;
     padding-top: 31px;
-  }
-}
-
-.study__carry {
-  @media #{$mobile} {
-    display: none;
-  }
-
-  @media #{$tablet} {
-    display: none;
-  }
-
-  &--control {
-    @media #{$mobile} {
-      display: none;
-    }
-
-    @media #{$desktop} {
-      display: none;
-    }
   }
 }

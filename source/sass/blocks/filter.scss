@@ -1,3 +1,18 @@
+.filter__wrapper {
+  box-sizing: border-box;
+  padding-top: 20px;
+
+  @media #{$tablet} {
+    padding-top: 64px;
+  }
+
+  @media #{$desktop} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 130px 28px 130px;
+  }
+}
+
 .filter__title {
   font-size: 14px;
   font-weight: 400;
@@ -21,52 +36,11 @@
   }
 }
 
-.filter__wrapper {
-  box-sizing: border-box;
-  padding-top: 20px;
-
-  @media #{$tablet} {
-    padding-top: 64px;
-  }
+.filter__container {
+  background-color: $advantages-background;
 
   @media #{$desktop} {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 130px 28px 130px;
-  }
-
-  &--control {
-
-    display: flex;
-    justify-content: space-around;
-
-    @media #{$mobile} {
-      padding-top: 34px;
-    }
-
-    @media #{$tablet} {
-      display: grid;
-      grid-template-rows: 55px 73px 70px;
-      justify-content: flex-start;
-    }
-
-    @media #{$desktop} {
-      display: grid;
-      grid-template-rows: 55px 73px 70px;
-      justify-content: flex-start;
-    }
-
-    @media #{$desktop} {
-      display: grid;
-    }
-  }
-
-  &--color {
-    background-color: $advantages-background;
-
-    @media #{$desktop} {
-      max-height: 514px;
-    }
+    max-height: 514px;
   }
 }
 
@@ -84,7 +58,7 @@
   }
 }
 
-.filter__photo {
+.filter__label {
   @media #{$tablet} {
     grid-row: 1/-1;
   }
@@ -94,15 +68,53 @@
   }
 }
 
+.filter__photo {
+  @media #{$tablet} {
+    min-width: 300px;
+    min-height: 400px;
+  }
+
+  @media #{$desktop} {
+    min-width: 300px;
+    min-height: 400px;
+  }
+}
+
 .filter__fieldset {
   border: none;
   height: 100%;
 }
 
+.filter__box {
+
+  display: flex;
+  justify-content: space-around;
+
+  @media #{$mobile} {
+    padding-top: 34px;
+  }
+
+  @media #{$tablet} {
+    display: grid;
+    grid-template-rows: 55px 73px 70px;
+    justify-content: flex-start;
+  }
+
+  @media #{$desktop} {
+    display: grid;
+    grid-template-rows: 55px 73px 70px;
+    justify-content: flex-start;
+  }
+
+  @media #{$desktop} {
+    display: grid;
+  }
+}
+
 .filter__buttons {
   @media #{$mobile} {
     display: grid;
-    padding-top: 38px;
+    padding-top: 39px;
     padding-bottom: 41px;
   }
 
@@ -113,7 +125,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 23px;
-    padding-top: 62px;
+    padding-top: 63px;
     box-sizing: border-box;
   }
 
@@ -121,5 +133,104 @@
     display: flex;
     justify-content: space-between;
     padding-top: 137px;
+  }
+}
+
+.filter__item {
+  border: none;
+  background: transparent;
+
+  &--crop {
+    @media #{$mobile} {
+      transform: translate(10px, 1px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(31px, -7px);
+    }
+
+    @media #{$desktop} {
+      transform: translate(-7px, -7px);
+    }
+  }
+
+  &--crop svg {
+    @media #{$tablet} {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &--fill {
+    @media #{$mobile} {
+      transform: translate(-6px, 2px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(30px, 4px);
+    }
+
+    @media #{$desktop} {
+      transform: translate(-7px, 3px);
+    }
+  }
+
+  &--fill svg {
+    @media #{$tablet} {
+      width: 24px;
+      height: 22px;
+    }
+  }
+
+  &--contrast {
+    @media #{$mobile} {
+      transform: translate(-22px, 7px);
+    }
+
+    @media #{$tablet} {
+      transform: translate(34px, 2px);
+    }
+
+    @media #{$desktop} {
+      transform: translate(-1px, 2px);
+    }
+  }
+
+  &--contrast svg {
+    @media #{$tablet} {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: rgba($text-color, 0.5);
+  }
+}
+
+.filter__icon {
+  @media #{$mobile} {
+    fill: rgba($text-color, 0.3);
+  }
+
+  @media #{$tablet} {
+    fill: $contacts-link-color;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media #{$desktop} {
+    fill: $contacts-link-color;
+  }
+
+  &--current {
+    fill: $contacts-link-color;
+    opacity: 1;
   }
 }

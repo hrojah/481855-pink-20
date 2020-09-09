@@ -5,17 +5,17 @@
 
   @media #{$mobile} {
     min-height: 546px;
-    background: url("../img/grey background-.png") no-repeat top 37px center/cover;
+    background: url("../img/grey-background-rates.png") no-repeat top 37px center/cover;
   }
 
   @media #{$tablet} {
     min-height: 327px;
     padding-top: 111px;
-    background: url("../img/grey background-.png") no-repeat top 1px center/cover;
+    background: url("../img/grey-background-rates.png") no-repeat top 1px center/cover;
   }
 
   @media #{$desktop} {
-    background: url("../img/grey background-desctop.png") no-repeat top 33px center/cover;
+    background: url("../img/grey-background-desktop.png") no-repeat top 33px center/cover;
   }
 }
 
@@ -50,6 +50,7 @@
 }
 
 .rates__title {
+  background-clip: padding-box;
   font-size: 16px;
   font-weight: 700;
   color: $white;
@@ -96,7 +97,7 @@
 
   @media #{$desktop} {
     left: 0;
-    bottom: 23px;
+    bottom: 22px;
   }
 }
 
@@ -111,6 +112,7 @@
 }
 
 .rates__detail {
+  background-clip: padding-box;
   width: 276px;
   border: 2px solid $border-color;
   border-radius: 0 0 0 1px;

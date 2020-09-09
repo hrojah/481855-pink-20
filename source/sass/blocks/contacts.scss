@@ -28,7 +28,7 @@
   @media #{$desktop} {
     display: grid;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 19px;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 160px;
   }
@@ -46,7 +46,7 @@
     padding-top: 29px;
   }
 
-  &--control {
+  &:nth-child(3) {
     @media #{$mobile} {
       padding-top: 18px;
     }
@@ -60,11 +60,13 @@
     }
   }
 
-  &--grid {
+  &:last-child {
     @media #{$mobile} {
       padding-top: 22px;
       max-width: 240px;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
 
     @media #{$tablet} {
@@ -72,6 +74,8 @@
       padding-top: 36px;
       max-width: 213px;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
 
     @media #{$desktop} {
@@ -81,7 +85,7 @@
     }
   }
 
-  &--range {
+  &:nth-child(2) {
     @media #{$tablet} {
       padding-right: 39px;
     }
@@ -141,5 +145,16 @@
 
   @media #{$mobile} {
     line-height: 33px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba($text-color, 0.3);
   }
 }

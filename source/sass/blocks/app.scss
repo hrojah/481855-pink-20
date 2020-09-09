@@ -1,8 +1,29 @@
 .app {
+  @media #{$mobile} {
+    background-color: $advantages-background;
+  }
+
+  @media #{$tablet} {
+    min-width: 620px;
+    margin: 0 20px;
+    order: -2;
+    padding-top: 55px;
+  }
+
+  @media #{$desktop} {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}
+
+.app__wrapper {
   box-sizing: border-box;
   margin: 0;
+  border: 2px solid $border-color;
+  padding: 0;
 
   @media #{$mobile} {
+    border: none;
     padding: 0 22px;
     max-width: 320px;
     min-height: 340px;
@@ -21,6 +42,8 @@
 }
 
 .app__legend {
+  margin: 0 auto;
+
   @media #{$mobile} {
     line-height: 18px;
     padding-top: 39px;
@@ -35,42 +58,24 @@
   }
 }
 
-.app__wrapper {
+.app__container {
   @media #{$mobile} {
-    background-color: $advantages-background;
+    padding-top: 39px;
+    margin-bottom: 6px;
   }
 
   @media #{$tablet} {
-    min-width: 620px;
-    margin: 0 20px;
-    order: -2;
-    padding-top: 55px;
+    padding-top: 46px;
+    padding-left: 59px;
   }
 
   @media #{$desktop} {
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-
-  &--control {
-    @media #{$mobile} {
-      padding-top: 39px;
-      margin-bottom: 6px;
-    }
-
-    @media #{$tablet} {
-      padding-top: 46px;
-      padding-left: 59px;
-    }
-
-    @media #{$desktop} {
-      padding-top: 46px;
-      padding-left: 132px;
-    }
+    padding-top: 46px;
+    padding-left: 132px;
   }
 }
 
-.app .app__wrapper--control:last-child {
+.app .app__container:last-child {
   @media #{$tablet} {
     padding-top: 44px;
   }

@@ -28,25 +28,70 @@
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.logo-footer {
-  @media #{$tablet} {
-    margin-left: -1px;
-    margin-top: -9px;
-  }
-
-  @media #{$desktop} {
-    margin-top: -10px;
-  }
 
   &--control {
     @media #{$mobile} {
-      margin-top: 6px;
+      padding-top: 46px;
+    }
+  }
+
+  &--range {
+    @media #{$mobile} {
+      padding-top: 46px;
     }
 
     @media #{$tablet} {
       padding-top: 4px;
     }
+  }
+}
+
+.page-footer__logo {
+  @media #{$tablet} {
+    transform: translate(-1px, -5px);
+  }
+
+  @media #{$desktop} {
+    transform: translateY(-5px);
+  }
+
+  &--control {
+    @media #{$mobile} {
+      margin-top: -7px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    outline: none;
+    fill: $contacts-link-color;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__svg {
+  fill: $text-color;
+
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.page-footer__svg-desktop {
+  fill: $text-color;
+
+  @media #{$mobile} {
+    display: none;
+  }
+
+  @media #{$tablet} {
+    display: none;
   }
 }

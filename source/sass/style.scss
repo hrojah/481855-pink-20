@@ -1,6 +1,6 @@
 @import "fonts";
 @import "variables";
-@import "blocks/page";
+@import "global";
 @import "blocks/page-body";
 @import "blocks/page-header";
 @import "blocks/main";
@@ -30,3 +30,4 @@
 @import "blocks/pop-ups";
 @import "blocks/copyright";
 @import "blocks/slider";
+@import "blocks/page-main";

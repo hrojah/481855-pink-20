@@ -1,0 +1,9 @@
+.page-main {
+  @media #{$tablet} {
+    margin-top: -49px;
+  }
+
+  @media #{$desktop} {
+    margin-top: -42px;
+  }
+}
