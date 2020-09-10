@@ -9,7 +9,7 @@
 
     @media (min-resolution: 2dppx) {
       background: $main-background url("../img/bg-back-mobile@2x.jpg") no-repeat center top 15px;
-      background-size: 100%;
+      background-size: cover;
     }
   }
 
@@ -36,14 +36,14 @@
   &--first {
     @media #{$mobile} {
       min-height: 733px;
-      background: url("../img/iphone-hand-mobile@1x.png") no-repeat top 195px center,
-        $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat top 19px center/cover;
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat top 191px center,
+        $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat top 15px center/cover;
 
       @media (min-resolution: 2dppx) {
         background: url("../img/iphone-hand-mobile@2x.png") no-repeat top 191px center,
           $main-background url("../img/bg-back-mobile@2x.jpg") no-repeat top 15px center/cover;
         background-size: 258px auto,
-          100%;
+          100% 462px;
       }
     }
 

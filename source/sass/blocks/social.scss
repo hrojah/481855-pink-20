@@ -42,7 +42,6 @@
 
 .social__link:active svg {
   fill-opacity: 0.3;
-  border: 3px solid rgba($text-color, 0.1);
 }
 
 .social__link svg {
@@ -51,7 +50,6 @@
   border-radius: 50%;
 }
 
-.social__link:hover svg,
-.social__link:focus svg {
+.social__link:hover {
   border-color: $text-color;
 }
