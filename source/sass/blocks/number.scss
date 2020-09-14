@@ -19,6 +19,7 @@
   }
 
   @media #{$desktop} {
+    max-width: 940px;
     padding: 0 58px;
     grid-column: 1/3;
     min-height: 173px;
@@ -44,7 +45,7 @@
 
 .number__wrapper {
   @media #{$mobile} {
-    padding-bottom: 42px;
+    padding-bottom: 40px;
   }
 
   @media #{$desktop} {

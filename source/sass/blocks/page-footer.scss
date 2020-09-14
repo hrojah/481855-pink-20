@@ -21,10 +21,10 @@
   }
 
   @media #{$desktop} {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     min-height: 197px;
-    padding: 0 130px;
+    /*padding: 0 130px;*/
     justify-content: space-between;
     align-items: center;
   }

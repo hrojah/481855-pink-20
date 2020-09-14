@@ -6,7 +6,7 @@
 
   @media #{$mobile} {
     border: none;
-    padding: 0 22px 30px 22px;
+    padding: 0 18px 15px 11px;
     max-width: 320px;
     margin: 0 auto;
     min-height: 571px;
@@ -20,6 +20,7 @@
 
   @media #{$desktop} {
     margin-top: 57px;
+    max-width: 940px;
   }
 
   &--control {
@@ -38,7 +39,8 @@
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       min-height: 540px;
       padding-top: 47px;
-      padding-left: 57px;
+      padding-left: 77px;
+      margin: 0;
       min-width: 300px;
     }
 

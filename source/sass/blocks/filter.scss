@@ -3,13 +3,13 @@
   padding-top: 20px;
 
   @media #{$tablet} {
-    padding-top: 64px;
+    padding-top: 61px;
   }
 
   @media #{$desktop} {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 24px 130px 28px 130px;
+    padding: 4px 0 28px;
   }
 }
 
@@ -33,6 +33,7 @@
   @media #{$desktop} {
     font-size: 18px;
     margin-bottom: 67px;
+    margin-left: -20px;
   }
 }
 
@@ -86,12 +87,11 @@
 }
 
 .filter__box {
-
   display: flex;
   justify-content: space-around;
 
   @media #{$mobile} {
-    padding-top: 34px;
+    padding-top: 29px;
   }
 
   @media #{$tablet} {
@@ -114,7 +114,7 @@
 .filter__buttons {
   @media #{$mobile} {
     display: grid;
-    padding-top: 39px;
+    padding-top: 31px;
     padding-bottom: 41px;
   }
 
@@ -125,14 +125,14 @@
     justify-content: flex-start;
     align-items: center;
     padding-left: 23px;
-    padding-top: 63px;
+    padding-top: 51px;
     box-sizing: border-box;
   }
 
   @media #{$desktop} {
     display: flex;
     justify-content: space-between;
-    padding-top: 137px;
+    padding-top: 122px;
   }
 }
 
@@ -142,15 +142,15 @@
 
   &--crop {
     @media #{$mobile} {
-      transform: translate(10px, 1px);
+      transform: translate(3px, 2px);
     }
 
     @media #{$tablet} {
-      transform: translate(31px, -7px);
+      transform: translate(18px, -5px);
     }
 
     @media #{$desktop} {
-      transform: translate(-7px, -7px);
+      transform: translate(-20px, -13px);
     }
   }
 
@@ -167,11 +167,11 @@
     }
 
     @media #{$tablet} {
-      transform: translate(30px, 4px);
+      transform: translate(17px, 6px);
     }
 
     @media #{$desktop} {
-      transform: translate(-7px, 3px);
+      transform: translate(-20px, -3px);
     }
   }
 
@@ -184,15 +184,15 @@
 
   &--contrast {
     @media #{$mobile} {
-      transform: translate(-22px, 7px);
+      transform: translate(-15px, 7px);
     }
 
     @media #{$tablet} {
-      transform: translate(34px, 2px);
+      transform: translate(21px, 4px);
     }
 
     @media #{$desktop} {
-      transform: translate(-1px, 2px);
+      transform: translate(-14px, -4px);
     }
   }
 

@@ -7,7 +7,7 @@
   @media #{$mobile} {
     border: none;
     max-width: 320px;
-    padding: 0 22px 42px 22px;
+    padding: 0 22px 40px;
   }
 
   @media #{$tablet} {
@@ -18,7 +18,7 @@
   }
 
   @media #{$desktop} {
-    margin: 0 35px 0 -2px;
+    margin: 0 45px 0 -2px;
     padding-top: 85px;
     padding-left: 2px;
   }

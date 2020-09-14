@@ -21,13 +21,12 @@
   }
 
   @media #{$desktop} {
-    max-width: 1200px;
+    max-width: 960px;
     min-height: 430px;
-    padding: 0 130px;
     margin: 0 auto;
     display: grid;
     align-items: center;
-    background: url("../img/timer-desktop.png") no-repeat top 68px left 131px;
+    background: url("../img/timer-desktop.png") no-repeat top 68px left 1px;
   }
 }
 
@@ -44,7 +43,7 @@
   @media #{$desktop} {
     width: 45%;
     margin: 0 auto;
-    padding-left: 223px;
+    padding-left: 212px;
     padding-top: 91px;
   }
 }

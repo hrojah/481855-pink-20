@@ -10,7 +10,6 @@
   @media #{$desktop} {
     box-sizing: border-box;
     max-width: 1200px;
-    padding: 0 130px;
     margin: 0 auto;
     display: grid;
     grid-template-rows: min-content min-content min-content min-content min-content;
@@ -400,35 +399,35 @@
   @media #{$tablet} {
     display: block;
     width: 100%;
-    padding-top: 19px;
-    padding-left: 54px;
+    padding-top: 21px;
+    padding-left: 39px;
   }
 
   @media #{$desktop} {
     display: block;
     width: 100%;
-    padding-left: 47px;
-    padding-top: 34px;
+    padding-left: 32px;
+    padding-top: 28px;
   }
 
   &--active {
     @media #{$mobile} {
       display: block;
-      width: 428%;
+      width: 400%;
       padding: 34px 0;
-      margin-left: -1px;
+      margin-left: -6px;
     }
 
     @media #{$desktop} {
-      padding-top: 19px;
-      padding-left: 35px;
+      padding-top: 13px;
+      padding-left: 20px;
     }
   }
 
   &--control {
     @media #{$desktop} {
-      padding-top: 37px;
-      padding-left: 31px;
+      padding-top: 31px;
+      padding-left: 16px;
     }
   }
 }
@@ -479,35 +478,35 @@
 
   @media #{$tablet} {
     right: 42px;
-    bottom: 28px;
+    bottom: 26px;
   }
 
   @media #{$desktop} {
     right: 205px;
-    bottom: 29px;
+    bottom: 35px;
   }
 
   &--fill {
     @media #{$tablet} {
-      bottom: 26px;
-      left: 77px;
+      bottom: 24px;
+      left: 62px;
     }
 
     @media #{$desktop} {
       right: 27px;
-      bottom: 27px;
+      bottom: 33px;
     }
   }
 
   &--contrast {
     @media #{$tablet} {
-      bottom: 26px;
+      bottom: 24px;
       right: 92px;
     }
 
     @media #{$desktop} {
       right: 114px;
-      bottom: 27px;
+      bottom: 33px;
     }
   }
 

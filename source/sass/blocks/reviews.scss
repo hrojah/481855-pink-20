@@ -17,8 +17,7 @@
   @media #{$desktop} {
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 130px;
+    max-width: 960px;
     background: url("../../img/quotes.png") no-repeat top 72px center;
   }
 }
@@ -29,13 +28,14 @@
   @media #{$tablet} {
     display: flex;
     flex-direction: column;
-    padding-top: 82px;
+    padding-top: 79px;
   }
 
   @media #{$desktop} {
     display: flex;
     flex-direction: column;
     padding-top: 185px;
+    padding-left: 126px;
   }
 }
 
@@ -55,6 +55,7 @@
     order: 1;
     line-height: 30px;
     padding-top: 36px;
+    margin-left: -146px;
   }
 }
 
@@ -73,7 +74,7 @@
   @media #{$desktop} {
     font-size: 18px;
     max-width: 688px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 

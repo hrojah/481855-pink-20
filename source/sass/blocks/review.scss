@@ -19,6 +19,7 @@
   }
 
   @media #{$desktop} {
+    max-width: 940px;
     grid-row: 4/5;
     grid-column: 1/-1;
     padding: 31px 58px 0;

@@ -48,7 +48,7 @@
     }
 
     @media #{$desktop} {
-      right: 130px;
+      right: 20px;
       top: -431px;
     }
   }
@@ -67,7 +67,7 @@
   }
 
   @media #{$desktop} {
-    min-height: 506px;
+    max-height: 506px;
   }
 }
 
@@ -93,13 +93,11 @@
   }
 
   @media #{$desktop} {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 130px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content min-content;
-    gap: 20px;
   }
 }
 
@@ -111,7 +109,8 @@
   }
 
   @media #{$desktop} {
-    margin-bottom: 34px;
+    margin-bottom: 53px;
+    max-width: 300px;
   }
 
   &:first-child {
@@ -119,18 +118,18 @@
       min-width: 620px;
       grid-column: 1/-1;
       margin-bottom: 30px;
-      padding-bottom: 24px;
+      padding-bottom: 22px;
     }
 
     @media #{$desktop} {
-      min-width: 940px;
+      max-width: 940px;
       grid-column: 1/-1;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
 
   &:nth-child(3) .gallery__item {
-    min-height: 121px;
+    max-height: 121px;
   }
 
   &:nth-child(4) .gallery__item {
@@ -138,21 +137,37 @@
   }
 
   &:nth-child(5) .gallery__item {
-    min-height: 121px;
+    max-height: 121px;
+
+    @media #{$desktop} {
+      min-height: 155px;
+    }
   }
 
   &:nth-child(6) .gallery__item {
-    min-height: 121px;
+    max-height: 121px;
+
+    @media #{$desktop} {
+      min-height: 155px;
+    }
   }
 
   &:last-child .gallery__item {
-    min-height: 121px;
+    max-height: 121px;
+
+    @media #{$desktop} {
+      min-height: 155px;
+    }
   }
 }
 
 .gallery__photo {
   width: 100%;
   vertical-align: bottom;
+
+  @media #{$desktop} {
+    height: 400px;
+  }
 }
 
 .gallery__item {
@@ -168,7 +183,7 @@
   }
 
   @media #{$tablet} {
-    padding: 23px 0 22px 30px;
+    padding: 23px 0 21px 30px;
   }
 
   @media #{$desktop} {
@@ -192,7 +207,7 @@
 
     @media #{$desktop} {
       padding-top: 25px;
-      padding-bottom: 24px;
+      padding-bottom: 23px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: min-content 1fr;
