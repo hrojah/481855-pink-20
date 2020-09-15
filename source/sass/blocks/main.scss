@@ -36,11 +36,11 @@
   &--first {
     @media #{$mobile} {
       min-height: 733px;
-      background: url("../img/iphone-hand-mobile@1x.png") no-repeat top 191px center,
+      background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 42%,
         $main-background url("../img/bg-back-mobile@1x.jpg") no-repeat top 15px center/cover;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/iphone-hand-mobile@2x.png") no-repeat top 191px center,
+        background: url("../img/iphone-hand-mobile@2x.png") no-repeat 0 42%,
           $main-background url("../img/bg-back-mobile@2x.jpg") no-repeat top 15px center/cover;
         background-size: 258px auto,
           100% 462px;
@@ -62,11 +62,11 @@
 
     @media #{$desktop} {
       min-height: 853px;
-      background: url("../img/iphone-hand-desktop@1x.png") no-repeat -18% bottom,
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat -29% bottom,
         $main-background url("../img/bg-back-desktop@1x.jpg") no-repeat center/cover;
 
       @media (min-resolution: 2dppx) {
-        background: url("../img/iphone-hand-desktop@2x.png") no-repeat -18% bottom,
+        background: url("../img/iphone-hand-desktop@2x.png") no-repeat -30% bottom,
           $main-background url("../img/bg-back-desktop@2x.jpg") no-repeat top 12px center/cover;
         background-size: 1049px auto,
           2556px auto;
@@ -99,6 +99,7 @@
 
   @media #{$desktop} {
     max-width: 960px;
+    padding: 0 10px;
   }
 }
 
@@ -113,7 +114,7 @@
     max-width: 240px;
     padding-top: 108px;
     line-height: 120%;
-    margin: 0 auto 356px;
+    margin: 0 auto 354px;
   }
 
   @media #{$tablet} {

@@ -21,7 +21,8 @@
     max-width: 960px;
     margin: 0 auto;
     line-height: 68px;
-    padding: 60px 0 0 95px;
+    padding-top: 60px;
+    text-align: center;
   }
 }
 
@@ -42,12 +43,11 @@
   @media #{$desktop} {
     font-size: 50px;
     max-width: 750px;
-    margin: 0;
   }
 
   &:last-child {
     @media #{$mobile} {
-      padding-top: 31px;
+      padding-top: 28px;
     }
 
     @media #{$tablet} {
@@ -56,7 +56,6 @@
 
     @media #{$desktop} {
       max-width: 500px;
-      padding-left: 125px;
     }
   }
 }

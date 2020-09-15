@@ -41,12 +41,12 @@
       transform: translate(-3px, 29px);
     }
 
-    @media #{$desktop} {
+    /*@media #{$desktop} {
       left: -17px;
       bottom: 109px;
       width: 60px;
       height: 60px;
-    }
+    }*/
   }
 
   &:nth-child(3) {
@@ -58,12 +58,12 @@
       transform: translate(22px, 29px);
     }
 
-    @media #{$desktop} {
+    /*@media #{$desktop} {
       right: -17px;
       bottom: 109px;
       width: 60px;
       height: 60px;
-    }
+    }*/
   }
 
   &:hover,
@@ -104,58 +104,60 @@
   }
 }
 
-.slider__toggle--previous::after {
+.slider__toggle--previous {
   @media #{$desktop} {
-    content: "";
+    /*content: "";*/
     position: absolute;
     width: 28px;
     height: 28px;
-    left: 23px;
-    top: 16px;
+    left: 16px;
+    top: -154px;
     transform: rotate(-45deg);
     border-top: 2px solid rgba($text-color, 0.3);
     border-left: 2px solid rgba($text-color, 0.3);
+    border-radius: 0;
   }
 }
 
-.slider__toggle--previous:hover::after,
-.slider__toggle--previous:focus::after {
+.slider__toggle--previous:hover,
+.slider__toggle--previous:focus {
   @media #{$desktop} {
     border-top: 2px solid $text-color;
     border-left: 2px solid $text-color;
   }
 }
 
-.slider__toggle--previous:active::after {
+.slider__toggle--previous:active {
   @media #{$desktop} {
     border-top: 2px solid rgba($text-color, 0.1);
     border-left: 2px solid rgba($text-color, 0.1);
   }
 }
 
-.slider__toggle--following::before {
+.slider__toggle--following {
   @media #{$desktop} {
-    content: "";
+    /*content: "";*/
     position: absolute;
     width: 28px;
     height: 28px;
-    left: -13px;
-    top: 16px;
+    right: 15px;
+    top: -154px;
     transform: rotate(136deg);
     border-top: 2px solid rgba($text-color, 0.3);
     border-left: 2px solid rgba($text-color, 0.3);
+    border-radius: 0;
   }
 }
 
-.slider__toggle--following:hover::before,
-.slider__toggle--following:focus::before {
+.slider__toggle--following:hover,
+.slider__toggle--following:focus {
   @media #{$desktop} {
     border-top: 2px solid $text-color;
     border-left: 2px solid $text-color;
   }
 }
 
-.slider__toggle--following:active::before {
+.slider__toggle--following:active/*::before*/ {
   @media #{$desktop} {
     border-top: 2px solid rgba($text-color, 0.1);
     border-left: 2px solid rgba($text-color, 0.1);

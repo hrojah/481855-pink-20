@@ -34,8 +34,7 @@
   @media #{$desktop} {
     display: flex;
     flex-direction: column;
-    padding-top: 185px;
-    padding-left: 126px;
+    padding: 186px 126px 0 126px;
   }
 }
 
@@ -55,7 +54,6 @@
     order: 1;
     line-height: 30px;
     padding-top: 36px;
-    margin-left: -146px;
   }
 }
 
@@ -74,7 +72,7 @@
   @media #{$desktop} {
     font-size: 18px;
     max-width: 688px;
-    margin: 0;
+    margin: 0 auto;
   }
 }
 

@@ -48,7 +48,7 @@
     }
 
     @media #{$desktop} {
-      right: 20px;
+      right: 10px;
       top: -431px;
     }
   }
@@ -111,6 +111,7 @@
   @media #{$desktop} {
     margin-bottom: 53px;
     max-width: 300px;
+    padding: 0 10px;
   }
 
   &:first-child {

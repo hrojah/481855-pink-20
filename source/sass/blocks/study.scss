@@ -26,7 +26,7 @@
     margin: 0 auto;
     display: grid;
     align-items: center;
-    background: url("../img/timer-desktop.png") no-repeat top 68px left 1px;
+    background: url("../img/timer-desktop.png") no-repeat 11px 70px;
   }
 }
 
@@ -43,8 +43,8 @@
   @media #{$desktop} {
     width: 45%;
     margin: 0 auto;
-    padding-left: 212px;
-    padding-top: 91px;
+    padding-left: 231px;
+    padding-top: 95px;
   }
 }
 
@@ -82,6 +82,6 @@
 
   @media #{$desktop} {
     font-size: 18px;
-    padding-top: 31px;
+    padding-top: 30px;
   }
 }
