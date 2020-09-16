@@ -39,7 +39,7 @@
     @media #{$desktop} {
       padding: 57px 60px 57px 80px;
       display: grid;
-      grid-template-columns: 389px 1fr;
+      grid-template-columns: min-content 1fr;
       grid-template-rows: min-content min-content;
     }
   }
@@ -407,7 +407,7 @@
   @media #{$desktop} {
     display: block;
     width: 100%;
-    padding-left: 32px;
+    padding-left: 43px;
     padding-top: 28px;
   }
 
@@ -421,14 +421,14 @@
 
     @media #{$desktop} {
       padding-top: 13px;
-      padding-left: 20px;
+      padding-left: 31px;
     }
   }
 
   &--control {
     @media #{$desktop} {
       padding-top: 31px;
-      padding-left: 16px;
+      padding-left: 27px;
     }
   }
 }
@@ -483,8 +483,8 @@
   }
 
   @media #{$desktop} {
-    right: 205px;
-    bottom: 35px;
+    right: 235px;
+    bottom: 28px;
   }
 
   &--fill {
@@ -494,8 +494,8 @@
     }
 
     @media #{$desktop} {
-      right: 27px;
-      bottom: 33px;
+      right: 57px;
+      bottom: 28px;
     }
   }
 
@@ -506,8 +506,8 @@
     }
 
     @media #{$desktop} {
-      right: 114px;
-      bottom: 33px;
+      right: 144px;
+      bottom: 13px;
     }
   }
 
